@@ -1,0 +1,22 @@
+uuid: 22b9c683-f9de-43d4-a8ee-90ef80992902
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dnorthman
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: dnorthman_content
+theme: dnorthman
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

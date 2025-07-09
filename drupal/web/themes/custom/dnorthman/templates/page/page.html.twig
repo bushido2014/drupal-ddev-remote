@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * Theme override to display a single Drupal page.
+ *
+ * Available variables:
+ * - page: The rendered elements of the page.
+ * - page.header: Items for the header region.
+ * - page.content: The main content of the page.
+ * - page.sidebar_first: Items for the first sidebar.
+ * - page.sidebar_second: Items for the second sidebar.
+ * - page.footer: Items for the footer region.
+ */
+#}
+
+<!DOCTYPE html>
+<html lang="{{ language.getId }}">
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+  </head>
+  <body{{ attributes }}>
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      {{ 'Skip to main content'|t }}
+    </a>
+
+    {% if page.header %}
+      <header role="banner">
+        {{ page.header }}
+      </header>
+    {% endif %}
+
+    <div id="main">
+      <main id="main-content" role="main">
+        {{ page.content }}
+      </main>
+
+      {% if page.sidebar_first %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+    </div>
+
+    {% if page.footer %}
+      <footer role="contentinfo">
+        {{ page.footer }}
+      </footer>
+    {% endif %}
+
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>

@@ -1,0 +1,22 @@
+uuid: b0bd2b61-39de-4914-9baf-0e65f0bd1de1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dnorthman
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: dnorthman_primary_local_tasks
+theme: dnorthman
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
