@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 set -ex
 
+# ✅ fallback: instalează ddev dacă nu există
+if ! command -v ddev &> /dev/null; then
+  echo "ddev not found, installing..."
+  curl -fsSL https://get.ddev.com | bash
+fi
+
 wait_for_docker() {
   while true; do
     docker ps > /dev/null 2>&1 && break
