@@ -1,7 +1,6 @@
 # Main theme library.
 global:
-  js:
-    js/main.js: {}
+  
   css:
     base:
       css/base/main.css: {}  
@@ -22,3 +21,5 @@ global:
       css/layout/layout.css: {}
     theme:
       css/theme/print.css: { media: print }
+  js:
+    js/main.js: {}
