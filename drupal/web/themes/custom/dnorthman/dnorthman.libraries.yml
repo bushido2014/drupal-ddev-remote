@@ -4,9 +4,7 @@ global:
     js/main.js: {}
   css:
     base:
-      css/base/main.css: {}
-  remote:
-    https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap: { type: external, minified: true }   
+      css/base/main.css: {}  
     component:
       css/component/block.css: {}
       css/component/breadcrumb.css: {}
