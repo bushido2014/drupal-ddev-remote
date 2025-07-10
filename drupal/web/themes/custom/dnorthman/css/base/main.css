@@ -1,0 +1,31 @@
+:root {
+  --color-primary: #1E2E45;
+  --color-white: #FFFFFF;
+  --color-accent: #9A9162;
+  --color-dark-gray: #3A3A38;
+  --color-light-gray: #E8E9E1;
+  --color-black: #1A1A1A;
+
+  --font-heading: 'DM Serif Display', serif;
+}
+
+/* Exemplu rapid */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--color-white);
+  color: var(--color-dark-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

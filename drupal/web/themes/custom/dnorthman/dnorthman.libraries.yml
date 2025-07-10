@@ -1,10 +1,12 @@
 # Main theme library.
 global:
   js:
-    js/dnorthman.js: {}
+    js/main.js: {}
   css:
     base:
-      css/base/elements.css: {}
+      css/base/main.css: {}
+  remote:
+    https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap: { type: external, minified: true }   
     component:
       css/component/block.css: {}
       css/component/breadcrumb.css: {}
