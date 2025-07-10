@@ -1,9 +1,8 @@
 # Main theme library.
 global:
-  
   css:
     base:
-      css/base/main.css: {}  
+      css/base/main.css: {}
     component:
       css/component/block.css: {}
       css/component/breadcrumb.css: {}
@@ -23,3 +22,5 @@ global:
       css/theme/print.css: { media: print }
   js:
     js/main.js: {}
+  dependencies:
+    - core/drupal
