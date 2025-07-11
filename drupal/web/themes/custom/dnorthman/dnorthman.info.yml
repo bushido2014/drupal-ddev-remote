@@ -7,7 +7,6 @@ core_version_requirement: ^10 || ^11
 libraries:
   - dnorthman/global
 regions:
-  topbar: 'Top Bar'
   header: 'Header'
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
