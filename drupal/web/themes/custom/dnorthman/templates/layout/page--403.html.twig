@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Theme override for 403 Access Denied page.
+ */
+#}
+
+{% extends "themes/custom/dnorthman/templates/layout/page.html.twig" %}
+
+{% block content %}
+  <div class="error-page error-403">
+    <h1>{{ 'Access denied'|t }}</h1>
+    <p>{{ 'You do not have permission to access this page.'|t }}</p>
+    <p>
+      <a href="{{ path('<front>') }}">{{ 'Return to homepage'|t }}</a>
+    </p>
+  </div>
+{% endblock %}
