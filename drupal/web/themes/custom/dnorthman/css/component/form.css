@@ -1,21 +1,56 @@
-{#
-/**
- * @file
- * CivicTheme implementation to display a block.
- */
-#}
-{% set classes = [
-  'block',
-  'block-' ~ configuration.provider|clean_class,
-  'block-' ~ plugin_id|clean_class,
-] %}
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content_block %}
-    {{ content }}
-  {% endblock %}
-</div>
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: var(--color-light-gray);
+}
+
+.login-form-wrapper {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-title {
+  margin-bottom: 1.5rem;
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  text-align: center;
+}
+
+/* Stiluri inspirate Bootstrap */
+.login-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-wrapper label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.login-form-wrapper input.form-text,
+.login-form-wrapper input.form-submit {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.login-form-wrapper input.form-submit {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form-wrapper input.form-submit:hover {
+  background-color: var(--color-accent);
+}

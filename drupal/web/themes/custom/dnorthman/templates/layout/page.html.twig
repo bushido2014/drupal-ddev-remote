@@ -37,23 +37,14 @@
       </header>
     {% endif %}
 
-    <div id="main">
-      <main id="main-content" role="main">
-        {{ page.content }}
-      </main>
+    
+      
+    {% block content %}
+      {{ page.content }}
+    {% endblock %}
+      
 
-      {% if page.sidebar_first %}
-        <aside class="layout-sidebar-first" role="complementary">
-          {{ page.sidebar_first }}
-        </aside>
-      {% endif %}
-
-      {% if page.sidebar_second %}
-        <aside class="layout-sidebar-second" role="complementary">
-          {{ page.sidebar_second }}
-        </aside>
-      {% endif %}
-    </div>
+      
 
     {% if page.footer %}
       <footer role="contentinfo">

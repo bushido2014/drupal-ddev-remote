@@ -29,3 +29,17 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.front-page .hero {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.front-page .features {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
