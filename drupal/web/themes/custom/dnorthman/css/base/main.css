@@ -64,5 +64,13 @@ a:hover {
   text-decoration: underline;
 }
 
+section {
+  padding: 60px 0;
+}
 
-
+.container {
+  max-width: 80rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}

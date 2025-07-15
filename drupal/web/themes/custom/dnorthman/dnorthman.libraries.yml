@@ -9,6 +9,7 @@ global:
       css/component/field.css: {}
       css/component/form.css: {}
       css/component/header.css: {}
+      css/component/paragraph.css: {}
       css/component/menu.css: {}
       css/component/messages.css: {}
       css/component/node.css: {}
