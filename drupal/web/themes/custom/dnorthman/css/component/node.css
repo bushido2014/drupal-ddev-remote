@@ -1,19 +1,4 @@
-.login-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  background-color: var(--color-light-gray);
-}
 
-.login-form-wrapper {
-  background: var(--color-white);
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 1rem rgba(0,0,0,0.1);
-  max-width: 400px;
-  width: 100%;
-}
 
 .login-title {
   margin-bottom: 1.5rem;
@@ -24,8 +9,7 @@
 
 /* Stiluri inspirate Bootstrap */
 .login-form-wrapper form {
-  display: flex;
-  flex-direction: column;
+  
 }
 
 .login-form-wrapper label {

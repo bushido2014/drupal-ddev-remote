@@ -1,0 +1,12 @@
+.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.main-menu li a {
+    padding: 8px 12px;
+    color: var(--color-white);
+} 
