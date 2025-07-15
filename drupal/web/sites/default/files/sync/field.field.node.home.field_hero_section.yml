@@ -1,0 +1,31 @@
+uuid: 55427f73-2976-4c7f-ab78-99dc125e5a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_section
+    - node.type.home
+    - paragraphs.paragraphs_type.home_hero_section
+  module:
+    - entity_reference_revisions
+id: node.home.field_hero_section
+field_name: field_hero_section
+entity_type: node
+bundle: home
+label: 'Hero Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      home_hero_section: home_hero_section
+    negate: 0
+    target_bundles_drag_drop:
+      home_hero_section:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

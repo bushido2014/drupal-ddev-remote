@@ -1,0 +1,18 @@
+uuid: 83265848-b0ff-452e-961c-bcd88670affa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Home
+type: home
+description: 'Home Page'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,30 @@
+uuid: d71ed7c1-1bb1-4127-b505-7a387f43cf3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home.field_hero_section
+    - node.type.home
+  module:
+    - entity_reference_revisions
+    - user
+id: node.home.default
+targetEntityType: node
+bundle: home
+mode: default
+content:
+  field_hero_section:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
