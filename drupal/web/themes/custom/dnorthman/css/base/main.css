@@ -9,16 +9,36 @@
   --font-heading: 'DM Serif Display', serif;
 }
 
-/* Exemplu rapid */
+html, body {
+  box-sizing: border-box;
+	height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }/
 body {
   font-family: Arial, sans-serif;
   background: var(--color-white);
   color: var(--color-dark-gray);
+  margin: 0;
+	padding: 0;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.75;
+	overflow-x: hidden;
+	opacity: 1;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--color-primary);
+  margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 a {
