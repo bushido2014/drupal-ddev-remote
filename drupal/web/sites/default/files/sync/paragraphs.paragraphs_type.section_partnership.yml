@@ -1,0 +1,10 @@
+uuid: 342f39a3-6fc6-47db-9e20-06f341365a9d
+langcode: en
+status: true
+dependencies: {  }
+id: section_partnership
+label: 'Section Partnership'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
