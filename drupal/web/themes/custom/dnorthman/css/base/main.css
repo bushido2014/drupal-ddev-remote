@@ -60,9 +60,41 @@ a {
   text-decoration: none;
 }
 
+a:active,
 a:hover {
-  text-decoration: underline;
+  outline: 0;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #fff;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+
 
 section {
   padding: 60px 0;
@@ -85,3 +117,7 @@ section {
 .content-between {
     justify-content: space-between;
 }
+ img {
+  max-width: 100%;
+  height: auto;
+ }
