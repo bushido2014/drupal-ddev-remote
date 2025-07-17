@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
 h2 {
@@ -73,4 +73,15 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.d-grid {
+  display: grid;
+}
+.content-between {
+    justify-content: space-between;
 }

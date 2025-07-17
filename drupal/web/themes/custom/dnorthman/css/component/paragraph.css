@@ -2,3 +2,15 @@
     background: var(--color-primary);
     color: var(--color-white);
 }
+.home-hero-section h1 {
+    color: var(--color-white);
+}
+.hero-title {
+    width: 45%;
+    padding: 16px;
+    text-align: left;
+}
+.hero-text {
+    width: 30%;
+    
+}

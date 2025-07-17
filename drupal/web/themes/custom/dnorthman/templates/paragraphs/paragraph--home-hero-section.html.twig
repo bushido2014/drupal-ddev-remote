@@ -48,19 +48,27 @@
 %}
 <section class="home-hero-section">
 <div class="container">
+<div class="d-flex content-between">
+ <div class="hero-title">
   <h1>{{ content.field_title }}</h1>
+  </div>
+  <div class="hero-text">
   <p>{{ content.field_description }}</p>
-
+  </div>
+</div>
+<div class="d-flex content-between">
   {% if content.field_link %}
     <div class="hero-link">
       {{ content.field_link }}
     </div>
   {% endif %}
 
-  {% if content.field_image %}
+{% if content.field_image %}
     <div class="hero-image">
       {{ content.field_image }}
     </div>
   {% endif %}
+  </div>
+
   </div>
 </section>
