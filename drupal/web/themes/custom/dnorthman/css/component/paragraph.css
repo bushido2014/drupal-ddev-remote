@@ -17,3 +17,7 @@
 .hero-image {
     width: 55%;
 }
+
+.partnership-logos {
+  grid-template-columns: repeat(4, 1fr);
+}
