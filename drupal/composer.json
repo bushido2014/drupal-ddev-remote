@@ -24,6 +24,7 @@
         "drupal/entity_usage": "2.x-dev@dev",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",
+        "drupal/twig_tweak": "^3.4",
         "drush/drush": "^13.6"
     },
     "conflict": {
