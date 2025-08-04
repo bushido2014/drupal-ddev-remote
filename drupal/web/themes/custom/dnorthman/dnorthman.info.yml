@@ -4,8 +4,13 @@ base theme: false
 description: Custom drupal theme
 package: Custom
 core_version_requirement: ^10 || ^11
+
 libraries:
   - dnorthman/global
+
+components:
+  - components
+
 regions:
   header: 'Header'
   primary_menu: 'Primary menu'

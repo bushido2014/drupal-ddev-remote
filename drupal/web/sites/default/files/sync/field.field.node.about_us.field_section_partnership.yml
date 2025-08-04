@@ -1,0 +1,34 @@
+uuid: 83e36756-b7b9-4d8f-8fc3-62c7c98e7ed1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section_partnership
+    - node.type.about_us
+    - paragraphs.paragraphs_type.section_partnership
+  module:
+    - entity_reference_revisions
+id: node.about_us.field_section_partnership
+field_name: field_section_partnership
+entity_type: node
+bundle: about_us
+label: 'Section Partnership'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      section_partnership: section_partnership
+    negate: 0
+    target_bundles_drag_drop:
+      home_hero_section:
+        weight: 3
+        enabled: false
+      section_partnership:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions
