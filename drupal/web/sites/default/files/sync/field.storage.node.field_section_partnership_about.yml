@@ -1,0 +1,21 @@
+uuid: 2e8e64d1-ce3a-45dd-94c8-5c24c852f6e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs_library
+id: node.field_section_partnership_about
+field_name: field_section_partnership_about
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraphs_library_item
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

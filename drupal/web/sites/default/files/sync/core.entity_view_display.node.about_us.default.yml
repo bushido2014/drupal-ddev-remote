@@ -1,0 +1,30 @@
+uuid: 4ffe2fb3-0ff8-44c4-b192-94e3dbc88a43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_us.field_section_partnership_about
+    - node.type.about_us
+  module:
+    - entity_reference_revisions
+    - user
+id: node.about_us.default
+targetEntityType: node
+bundle: about_us
+mode: default
+content:
+  field_section_partnership_about:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
