@@ -155,9 +155,9 @@
             'dev_requirement' => false,
         ),
         'drupal/admin_toolbar' => array(
-            'pretty_version' => '3.6.1',
-            'version' => '3.6.1.0',
-            'reference' => '3.6.1',
+            'pretty_version' => '3.6.2',
+            'version' => '3.6.2.0',
+            'reference' => '3.6.2',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/admin_toolbar',
             'aliases' => array(),
@@ -368,6 +368,17 @@
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/entity_reference_revisions',
             'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/entity_usage' => array(
+            'pretty_version' => 'dev-2.x',
+            'version' => 'dev-2.x',
+            'reference' => 'a930a093e468dedf3599b4436419524d2835478c',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/entity_usage',
+            'aliases' => array(
+                0 => '2.x-dev',
+            ),
             'dev_requirement' => false,
         ),
         'drupal/paragraphs' => array(
