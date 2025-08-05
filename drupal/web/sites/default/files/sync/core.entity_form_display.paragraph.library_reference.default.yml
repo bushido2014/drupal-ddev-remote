@@ -1,0 +1,27 @@
+uuid: ffa8bfb1-ecfd-4452-83ed-f59aca537403
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.library_reference.field_library_item
+    - paragraphs.paragraphs_type.library_reference
+  module:
+    - entity_reference_revisions
+id: paragraph.library_reference.default
+targetEntityType: paragraph
+bundle: library_reference
+mode: default
+content:
+  field_library_item:
+    type: entity_reference_revisions_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

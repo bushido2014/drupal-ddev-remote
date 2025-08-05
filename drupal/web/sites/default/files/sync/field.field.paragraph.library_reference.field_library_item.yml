@@ -1,0 +1,37 @@
+uuid: 75f05b90-9846-4a04-84c0-e6d3cbd29d4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_library_item
+    - paragraphs.paragraphs_type.library_reference
+    - paragraphs.paragraphs_type.section_partnership
+  module:
+    - entity_reference_revisions
+id: paragraph.library_reference.field_library_item
+field_name: field_library_item
+entity_type: paragraph
+bundle: library_reference
+label: 'Library Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      section_partnership: section_partnership
+    negate: 0
+    target_bundles_drag_drop:
+      home_hero_section:
+        weight: 4
+        enabled: false
+      library_reference:
+        weight: 5
+        enabled: false
+      section_partnership:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

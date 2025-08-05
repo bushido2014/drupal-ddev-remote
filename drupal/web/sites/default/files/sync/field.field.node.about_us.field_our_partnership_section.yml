@@ -1,18 +1,19 @@
-uuid: 83e36756-b7b9-4d8f-8fc3-62c7c98e7ed1
+uuid: e9666001-d31b-4dfe-baf2-21884dd5962a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_section_partnership
+    - field.storage.node.field_our_partnership_section
     - node.type.about_us
+    - paragraphs.paragraphs_type.library_reference
     - paragraphs.paragraphs_type.section_partnership
   module:
     - entity_reference_revisions
-id: node.about_us.field_section_partnership
-field_name: field_section_partnership
+id: node.about_us.field_our_partnership_section
+field_name: field_our_partnership_section
 entity_type: node
 bundle: about_us
-label: 'Section Partnership'
+label: 'Our Partnership Section'
 description: ''
 required: false
 translatable: false
@@ -23,11 +24,15 @@ settings:
   handler_settings:
     target_bundles:
       section_partnership: section_partnership
+      library_reference: library_reference
     negate: 0
     target_bundles_drag_drop:
       home_hero_section:
         weight: 3
         enabled: false
+      library_reference:
+        weight: 5
+        enabled: true
       section_partnership:
         weight: 4
         enabled: true

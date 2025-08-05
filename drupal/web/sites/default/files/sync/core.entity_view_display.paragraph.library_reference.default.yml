@@ -1,0 +1,24 @@
+uuid: 9f6782fb-a101-41a3-b96e-b41aae7ba7f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.library_reference.field_library_item
+    - paragraphs.paragraphs_type.library_reference
+  module:
+    - entity_reference_revisions
+id: paragraph.library_reference.default
+targetEntityType: paragraph
+bundle: library_reference
+mode: default
+content:
+  field_library_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

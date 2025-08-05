@@ -1,0 +1,10 @@
+uuid: 63d959ba-b197-4977-b5e9-de8d6905be3d
+langcode: en
+status: true
+dependencies: {  }
+id: library_reference
+label: 'Library Reference'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

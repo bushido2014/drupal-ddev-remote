@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.about_us.field_section_partnership
+    - field.field.node.about_us.field_our_partnership_section
     - node.type.about_us
   module:
     - paragraphs
@@ -19,9 +19,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_section_partnership:
+  field_our_partnership_section:
     type: paragraphs
-    weight: 122
+    weight: 121
     region: content
     settings:
       title: Paragraph

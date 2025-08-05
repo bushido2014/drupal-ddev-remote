@@ -1,10 +1,1 @@
 {{ content }}
-
-ee
-{% for item in node.field_section_partnership %}
-  {% set paragraph = item.entity %}
-  {% include "@dnorthman/section_partnership/section-partnership.twig" with {
-    title: 'Our Partnership',
-    images: paragraph.field_image_partnership
-  } %}
-{% endfor %}
