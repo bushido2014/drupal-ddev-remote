@@ -14,18 +14,7 @@
 #}
 
 
-    
-    {% if page.header %}
-      <header class="header">
-       {% if page.topbar %}
-      <div class="topbar">
-      {{ page.topbar }}
-       </div>
-       {% endif %}
-           {{ page.header }}
-      </header>
-    {% endif %}
-
+{{ include('@dnorthman/layout/header.html.twig') }}
     
       
     {% block content %}
