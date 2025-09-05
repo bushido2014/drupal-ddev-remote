@@ -1,0 +1,12 @@
+<section class="home-article-section">
+  <div class="container">
+    <article class="home-article">
+      {# Render the article with teaser view mode #}
+      {{ content.field_article_reference|without('links') }}
+    </article>
+
+    <div class="home-article__button">
+      <a href="/about-us" class="btn btn-primary">See Detail</a>
+    </div>
+  </div>
+</section>
