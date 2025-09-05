@@ -1,0 +1,21 @@
+uuid: 74f8daff-3551-40cd-be17-2e7732795ec4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.article_reference.field_article_reference
+    - paragraphs.paragraphs_type.article_reference
+id: paragraph.article_reference.default
+targetEntityType: paragraph
+bundle: article_reference
+mode: default
+content:
+  field_article_reference:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

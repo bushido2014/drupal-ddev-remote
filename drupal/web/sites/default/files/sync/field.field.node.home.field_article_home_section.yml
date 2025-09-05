@@ -1,0 +1,40 @@
+uuid: dfd401bf-267b-4dce-95ad-8e504f90183e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_home_section
+    - node.type.home
+    - paragraphs.paragraphs_type.article_reference
+  module:
+    - entity_reference_revisions
+id: node.home.field_article_home_section
+field_name: field_article_home_section
+entity_type: node
+bundle: home
+label: 'Article Home section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      article_reference: article_reference
+    negate: 0
+    target_bundles_drag_drop:
+      article_reference:
+        weight: 5
+        enabled: true
+      home_hero_section:
+        weight: 6
+        enabled: false
+      library_reference:
+        weight: 7
+        enabled: false
+      section_partnership:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

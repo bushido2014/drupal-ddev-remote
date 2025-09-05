@@ -1,0 +1,25 @@
+uuid: c4406d8c-df52-41f0-b88d-2922d388f762
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.article_reference.field_article_reference
+    - paragraphs.paragraphs_type.article_reference
+id: paragraph.article_reference.default
+targetEntityType: paragraph
+bundle: article_reference
+mode: default
+content:
+  field_article_reference:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
