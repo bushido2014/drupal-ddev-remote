@@ -1,6 +1,8 @@
 <section class="home-article-section">
   <div class="container">
-    <article class="home-article">
+    <article class="home-article d-grid">
+    <div class="home-article__item">
+    <div class="before-title">About Us</div>
       {% if content.field_title %}
         <h2>{{ content.field_title }}</h2>
       {% endif %}
@@ -8,18 +10,22 @@
       {% if content.field_description %}
         <p>{{ content.field_description }}</p>
       {% endif %}
+      {% if content.field_link %}
+      <div class="button home-article__button">
+        {{ content.field_link }}
+      </div>
+    {% endif %}
 
+     </div>
+     <div class="home-article__item">
       {% if content.field_image %}
         <div class="home-article__image">
           {{ content.field_image }}
         </div>
       {% endif %}
+      </div>
     </article>
 
-    {% if content.field_link %}
-      <div class="home-article__button">
-        {{ content.field_link }}
-      </div>
-    {% endif %}
+    
   </div>
 </section>

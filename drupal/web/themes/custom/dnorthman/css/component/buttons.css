@@ -22,3 +22,13 @@
   color: var(--color-accent);
   border-color: var(--color-accent);
 }
+
+.btn-secondary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
