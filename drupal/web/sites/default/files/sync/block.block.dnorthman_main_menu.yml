@@ -36,3 +36,7 @@ visibility:
       authenticated: authenticated
       content_editor: content_editor
       administrator: administrator
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

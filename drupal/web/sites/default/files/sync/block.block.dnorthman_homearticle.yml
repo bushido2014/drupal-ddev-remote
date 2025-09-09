@@ -8,6 +8,7 @@ dependencies:
     - block_content
     - node
     - system
+    - user
   theme:
     - dnorthman
 id: dnorthman_homearticle
@@ -36,3 +37,13 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       home: home
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator
