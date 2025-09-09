@@ -1,0 +1,23 @@
+uuid: 412c1e7b-270a-4720-81ac-5d9363365b1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_article
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.home_article.field_link
+field_name: field_link
+entity_type: block_content
+bundle: home_article
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

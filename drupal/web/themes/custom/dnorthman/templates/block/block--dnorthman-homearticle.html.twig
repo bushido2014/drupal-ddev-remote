@@ -1,0 +1,25 @@
+<section class="home-article-section">
+  <div class="container">
+    <article class="home-article">
+      {% if content.field_title %}
+        <h2>{{ content.field_title }}</h2>
+      {% endif %}
+
+      {% if content.field_description %}
+        <p>{{ content.field_description }}</p>
+      {% endif %}
+
+      {% if content.field_image %}
+        <div class="home-article__image">
+          {{ content.field_image }}
+        </div>
+      {% endif %}
+    </article>
+
+    {% if content.field_link %}
+      <div class="home-article__button">
+        {{ content.field_link }}
+      </div>
+    {% endif %}
+  </div>
+</section>

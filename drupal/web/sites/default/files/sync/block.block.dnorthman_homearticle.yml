@@ -1,0 +1,38 @@
+uuid: 1daaa985-a711-44b9-9b57-c01f390a0e18
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:home_article:9226d936-5d3d-46e3-a6a9-7a5a4860623e'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - dnorthman
+id: dnorthman_homearticle
+theme: dnorthman
+region: homearticle
+weight: -6
+provider: null
+plugin: 'block_content:9226d936-5d3d-46e3-a6a9-7a5a4860623e'
+settings:
+  id: 'block_content:9226d936-5d3d-46e3-a6a9-7a5a4860623e'
+  label: 'Home Article'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      home: home

@@ -21,7 +21,11 @@
       {{ page.content }}
     {% endblock %}
       
-
+{% if page.homearticle %}
+  <div class="home-article-region">
+    {{ page.homearticle }}
+  </div>
+{% endif %}
       
 
     {% if page.footer %}

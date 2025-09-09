@@ -1,0 +1,8 @@
+uuid: f7c9a678-e3a3-4be5-95ae-f0ec39a5e047
+langcode: en
+status: true
+dependencies: {  }
+id: home_article
+label: 'Home Article'
+revision: false
+description: 'Home Article '
