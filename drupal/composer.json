@@ -24,6 +24,7 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",
+        "drupal/token": "^1.16",
         "drupal/twig_tweak": "^3.4",
         "drush/drush": "^13.6"
     },

@@ -407,9 +407,9 @@
             'dev_requirement' => false,
         ),
         'drupal/token' => array(
-            'pretty_version' => '1.15.0',
-            'version' => '1.15.0.0',
-            'reference' => '8.x-1.15',
+            'pretty_version' => '1.16.0',
+            'version' => '1.16.0.0',
+            'reference' => '8.x-1.16',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/token',
             'aliases' => array(),

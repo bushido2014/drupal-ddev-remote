@@ -1,0 +1,20 @@
+uuid: 26da8573-89ab-4866-90de-b0d40947350c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_service_price
+field_name: field_service_price
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

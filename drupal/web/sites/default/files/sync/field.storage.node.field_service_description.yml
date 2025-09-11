@@ -1,0 +1,19 @@
+uuid: c20b1307-140a-4a9f-94e2-cff54c3682bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_service_description
+field_name: field_service_description
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
