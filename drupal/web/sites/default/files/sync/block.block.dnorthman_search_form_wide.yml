@@ -1,6 +1,6 @@
 uuid: 8c3025c3-bdc7-4f90-b651-7c6a0e49aec4
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
@@ -10,7 +10,7 @@ _core:
   default_config_hash: pbbed0hdqGDF-_QWVVTWRAwgDIotFuAvWH5mWUZu0fA
 id: dnorthman_search_form_wide
 theme: dnorthman
-region: secondary_menu
+region: header
 weight: -5
 provider: null
 plugin: search_form_block

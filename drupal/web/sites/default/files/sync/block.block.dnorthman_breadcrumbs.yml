@@ -1,6 +1,6 @@
 uuid: f623e5a8-a0b9-40e3-888b-6ab2ee9e2a7f
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: dnorthman_breadcrumbs
 theme: dnorthman
-region: breadcrumb
+region: header
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

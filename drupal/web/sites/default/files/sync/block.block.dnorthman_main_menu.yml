@@ -26,10 +26,6 @@ settings:
   depth: 2
   expand_all_items: true
 visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
   user_role:
     id: user_role
     negate: false
