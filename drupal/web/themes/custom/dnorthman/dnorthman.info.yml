@@ -19,6 +19,7 @@ regions:
   page_bottom: 'Page bottom'
   featured: 'Featured'
   breadcrumb: 'Breadcrumb'
+  services_header: 'Services Header'
   content: 'Content'
   homearticle: 'Home Article'
   sidebar_first: 'Sidebar first'

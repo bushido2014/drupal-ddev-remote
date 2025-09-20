@@ -26,6 +26,10 @@ settings:
   depth: 2
   expand_all_items: true
 visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
   user_role:
     id: user_role
     negate: false
@@ -36,7 +40,3 @@ visibility:
       authenticated: authenticated
       content_editor: content_editor
       administrator: administrator
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'

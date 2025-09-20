@@ -1,0 +1,38 @@
+uuid: b3d6b9fd-5486-4921-8a34-786c2f0eb43b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:services_header:6ccbb253-8552-435f-a8c8-5da2dd94ceb1'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - dnorthman
+id: dnorthman_servicesheaderblock
+theme: dnorthman
+region: services_header
+weight: 0
+provider: null
+plugin: 'block_content:6ccbb253-8552-435f-a8c8-5da2dd94ceb1'
+settings:
+  id: 'block_content:6ccbb253-8552-435f-a8c8-5da2dd94ceb1'
+  label: 'Services Header Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /services
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      services: services
