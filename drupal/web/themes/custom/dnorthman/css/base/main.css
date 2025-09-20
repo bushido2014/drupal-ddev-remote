@@ -105,3 +105,9 @@ section {
   max-width: 100%;
   height: auto;
  }
+
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
