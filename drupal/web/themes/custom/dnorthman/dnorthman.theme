@@ -12,6 +12,19 @@ declare(strict_types=1);
  */
 function dnorthman_preprocess_html(array &$variables): void {
 
+$route_name = \Drupal::routeMatch()->getRouteName();
+
+  // Adaugă route ca body class (ca la WordPress).
+  $variables['attributes']['class'][] = 'page--' . strtr($route_name, '.', '-');
+
+  // Exemplu: adaugă clasa după tipul de nod
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    if ($node instanceof \Drupal\node\NodeInterface) {
+      $variables['attributes']['class'][] = 'node--type-' . $node->bundle();
+    }
+  }
+
+
 }
 
 /**

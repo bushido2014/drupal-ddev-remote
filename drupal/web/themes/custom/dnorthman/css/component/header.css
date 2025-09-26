@@ -1,8 +1,10 @@
 .header {
-  background: var(--color-primary);
+  
+  background-color: transparent;
   color: var(--color-white);
   width: 100%;
-  
+  position: fixed;
+  z-index: 999;
 }
 
 
@@ -159,3 +161,7 @@
     text-align: left;
   }
 } 
+
+.node--type-home .header {
+  background-color: var(--color-primary);
+}
