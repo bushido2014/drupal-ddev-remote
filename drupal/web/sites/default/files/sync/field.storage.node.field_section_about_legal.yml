@@ -1,4 +1,4 @@
-uuid: 97b3fed4-f59c-4ac9-b91f-beb7068defe7
+uuid: e009f627-900e-422b-a8c6-b615f181148a
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
-id: node.field_article_home_section
-field_name: field_article_home_section
+id: node.field_section_about_legal
+field_name: field_section_about_legal
 entity_type: node
 type: entity_reference_revisions
 settings:
   target_type: paragraph
 module: entity_reference_revisions
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

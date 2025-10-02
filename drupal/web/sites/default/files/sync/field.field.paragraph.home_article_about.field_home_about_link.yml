@@ -1,0 +1,23 @@
+uuid: 10fa5e8f-4b10-4458-b012-204b11c177dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_home_about_link
+    - paragraphs.paragraphs_type.home_article_about
+  module:
+    - link
+id: paragraph.home_article_about.field_home_about_link
+field_name: field_home_about_link
+entity_type: paragraph
+bundle: home_article_about
+label: 'Home about link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,64 @@
+uuid: f629dc11-f9ca-4977-b1e9-5bcd19d9c372
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_article_about.field_before_title
+    - field.field.paragraph.home_article_about.field_description_about_us
+    - field.field.paragraph.home_article_about.field_home_about_link
+    - field.field.paragraph.home_article_about.field_image_about_us
+    - field.field.paragraph.home_article_about.field_title_about_us
+    - paragraphs.paragraphs_type.home_article_about
+  module:
+    - link
+    - text
+id: paragraph.home_article_about.default
+targetEntityType: paragraph
+bundle: home_article_about
+mode: default
+content:
+  field_before_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description_about_us:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_home_about_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image_about_us:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title_about_us:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

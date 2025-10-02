@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.home.field_article_home_section
     - field.field.node.home.field_hero_section
+    - field.field.node.home.field_home_article_about
     - field.field.node.home.field_section_partnership
     - node.type.home
   module:
@@ -21,9 +21,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_article_home_section:
+  field_hero_section:
     type: paragraphs
-    weight: 123
+    weight: 121
     region: content
     settings:
       title: Paragraph
@@ -39,9 +39,9 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
-  field_hero_section:
+  field_home_article_about:
     type: paragraphs
-    weight: 121
+    weight: 123
     region: content
     settings:
       title: Paragraph

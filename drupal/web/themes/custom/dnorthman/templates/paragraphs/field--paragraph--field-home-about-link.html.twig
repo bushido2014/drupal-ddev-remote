@@ -1,0 +1,11 @@
+<div{{ attributes.addClass('home-link-wrapper') }}>
+  {% if not label_hidden %}
+    <h3{{ title_attributes }}>{{ label }}</h3>
+  {% endif %}
+
+  {% for item in items %}
+    <a href="{{ item.content['#url'] }}" class="btn btn-primary">
+      {{ item.content['#title'] }}
+    </a>
+  {% endfor %}
+</div>

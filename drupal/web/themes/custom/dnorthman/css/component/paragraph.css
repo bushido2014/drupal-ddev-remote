@@ -21,3 +21,6 @@
 .partnership-logos {
   grid-template-columns: repeat(4, 1fr);
 }
+.home-about {
+grid-template-columns: repeat(2, 1fr);
+}

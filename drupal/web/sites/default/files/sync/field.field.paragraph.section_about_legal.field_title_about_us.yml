@@ -1,0 +1,19 @@
+uuid: c87c0957-059a-44e5-85f8-525a60666574
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_about_us
+    - paragraphs.paragraphs_type.section_about_legal
+id: paragraph.section_about_legal.field_title_about_us
+field_name: field_title_about_us
+entity_type: paragraph
+bundle: section_about_legal
+label: 'Title About Us'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 1b02ddde-adc3-487f-8129-8fd6855fb6d2
+langcode: en
+status: true
+dependencies: {  }
+id: section_about_legal
+label: 'Section About Legal'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,20 +1,20 @@
-uuid: dfd401bf-267b-4dce-95ad-8e504f90183e
+uuid: 683fd698-1d66-4ac9-a2f3-c26abe599b44
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_article_home_section
+    - field.storage.node.field_home_article_about
     - node.type.home
-    - paragraphs.paragraphs_type.article_reference
+    - paragraphs.paragraphs_type.home_article_about
   module:
     - entity_reference_revisions
-id: node.home.field_article_home_section
-field_name: field_article_home_section
+id: node.home.field_home_article_about
+field_name: field_home_article_about
 entity_type: node
 bundle: home
-label: 'Article Home section'
+label: 'Home Article about'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -22,19 +22,25 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      article_reference: article_reference
+      home_article_about: home_article_about
     negate: 0
     target_bundles_drag_drop:
       article_reference:
-        weight: 5
-        enabled: true
-      home_hero_section:
-        weight: 6
-        enabled: false
-      library_reference:
         weight: 7
         enabled: false
-      section_partnership:
+      home_article_about:
         weight: 8
+        enabled: true
+      home_hero_section:
+        weight: 9
+        enabled: false
+      library_reference:
+        weight: 10
+        enabled: false
+      section_about_legal:
+        weight: 11
+        enabled: false
+      section_partnership:
+        weight: 12
         enabled: false
 field_type: entity_reference_revisions

@@ -1,0 +1,19 @@
+uuid: 8538e02c-1a99-40ee-9967-ff3ed7b84300
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_before_title
+    - paragraphs.paragraphs_type.home_article_about
+id: paragraph.home_article_about.field_before_title
+field_name: field_before_title
+entity_type: paragraph
+bundle: home_article_about
+label: before_title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

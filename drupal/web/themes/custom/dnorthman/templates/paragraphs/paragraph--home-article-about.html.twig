@@ -1,0 +1,30 @@
+<section class="section-about-legal">
+<div class="container">
+<div class="d-grid home-about">
+
+ <div class="about-title">
+   <h4>{{content.field_before_title}}</h4>
+  <h1>{{ content.field_title_about_us }}</h1>
+  <div class="about-text">
+  <p>{{ content.field_description_about_us }}</p>
+</div>
+{% if content.field_home_about_link %}
+    <div class="hero-link-about">
+      {{ content.field_home_about_link }}
+    </div>
+  {% endif %}
+  </div>
+  <div class="about-image">
+{% if content.field_image_about_us %}
+    <div class="about-image">
+      {{ content.field_image_about_us }}
+    </div>
+  {% endif %}
+</div>
+ </div>
+
+
+ 
+</div>
+
+</section>

@@ -5,8 +5,8 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - node
     - system
-    - user
   theme:
     - dnorthman
 _core:
@@ -26,13 +26,14 @@ settings:
   depth: 2
   expand_all_items: true
 visibility:
-  user_role:
-    id: user_role
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
-      user: '@user.current_user_context:current_user'
-    roles:
-      anonymous: anonymous
-      authenticated: authenticated
-      content_editor: content_editor
-      administrator: administrator
+      node: '@node.node_route_context:node'
+    bundles:
+      about_us: about_us
+      article: article
+      home: home
+      page: page
+      services: services

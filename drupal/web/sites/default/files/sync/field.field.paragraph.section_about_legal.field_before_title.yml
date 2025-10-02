@@ -1,0 +1,19 @@
+uuid: 97f56e3d-8606-4bda-8daf-76e8d67393d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_before_title
+    - paragraphs.paragraphs_type.section_about_legal
+id: paragraph.section_about_legal.field_before_title
+field_name: field_before_title
+entity_type: paragraph
+bundle: section_about_legal
+label: before_title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

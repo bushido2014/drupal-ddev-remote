@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:services_header:6ccbb253-8552-435f-a8c8-5da2dd94ceb1'
   module:
     - block_content
+    - node
     - system
   theme:
     - dnorthman
@@ -28,3 +29,10 @@ visibility:
     id: request_path
     negate: false
     pages: /services
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      services: services

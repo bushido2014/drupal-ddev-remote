@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.about_us.field_our_partnership_section
+    - field.field.node.about_us.field_section_about_legal
     - node.type.about_us
   module:
     - entity_reference_revisions
@@ -20,11 +21,20 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 101
+    weight: 1
+    region: content
+  field_section_about_legal:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden: {  }

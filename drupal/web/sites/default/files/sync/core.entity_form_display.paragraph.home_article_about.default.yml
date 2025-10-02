@@ -1,0 +1,64 @@
+uuid: a4f26be1-1a68-4519-9d9f-95c40f824f97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_article_about.field_before_title
+    - field.field.paragraph.home_article_about.field_description_about_us
+    - field.field.paragraph.home_article_about.field_home_about_link
+    - field.field.paragraph.home_article_about.field_image_about_us
+    - field.field.paragraph.home_article_about.field_title_about_us
+    - paragraphs.paragraphs_type.home_article_about
+  module:
+    - link
+    - media_library
+    - text
+id: paragraph.home_article_about.default
+targetEntityType: paragraph
+bundle: home_article_about
+mode: default
+content:
+  field_before_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description_about_us:
+    type: text_textarea_with_summary
+    weight: 3
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_home_about_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_image_about_us:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_title_about_us:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

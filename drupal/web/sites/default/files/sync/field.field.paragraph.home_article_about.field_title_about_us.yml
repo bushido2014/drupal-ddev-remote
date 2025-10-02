@@ -1,0 +1,19 @@
+uuid: 0f17b391-e6c2-4538-87cc-ff4c1bb62475
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_about_us
+    - paragraphs.paragraphs_type.home_article_about
+id: paragraph.home_article_about.field_title_about_us
+field_name: field_title_about_us
+entity_type: paragraph
+bundle: home_article_about
+label: 'Title About Us'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

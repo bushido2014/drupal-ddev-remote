@@ -1,0 +1,10 @@
+uuid: 49ebd2d9-3b35-4714-b01c-338ffe040246
+langcode: en
+status: true
+dependencies: {  }
+id: home_article_about
+label: 'Home Article about'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
