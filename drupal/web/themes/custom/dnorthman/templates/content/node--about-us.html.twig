@@ -1,3 +1,10 @@
 
+ {% if label %}
+    <section class="bg-page-title" style="background-image: url('{{ base_path ~ directory }}/img/bg-title.png');">
+      <h1 class="page-title">{{ label }}</h1>
+    </section>
+  {% endif %}
 
-{{ content }}
+  <div{{ content_attributes }}>
+    {{ content }}
+  </div>
