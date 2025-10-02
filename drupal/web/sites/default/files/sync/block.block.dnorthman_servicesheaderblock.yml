@@ -18,7 +18,7 @@ plugin: 'block_content:6ccbb253-8552-435f-a8c8-5da2dd94ceb1'
 settings:
   id: 'block_content:6ccbb253-8552-435f-a8c8-5da2dd94ceb1'
   label: 'Services Header Block'
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''

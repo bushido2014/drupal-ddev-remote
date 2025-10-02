@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - system
+    - user
   theme:
     - dnorthman
 _core:
@@ -23,4 +24,14 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: /home
+    pages: "/home\r\n/user/login"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

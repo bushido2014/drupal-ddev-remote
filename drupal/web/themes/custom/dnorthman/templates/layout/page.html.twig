@@ -15,16 +15,18 @@
 
 
 {{ include('@dnorthman/layout/header.html.twig') }}
- 
+ {% block content %}
+      {{ page.content }}
+    {% endblock %}
+
+    
   {% if page.services_header %}
   <div class="service-header-region">
     {{ page.services_header }}
   </div>
 {% endif %}  
       
-    {% block content %}
-      {{ page.content }}
-    {% endblock %}
+    
       
 {% if page.homearticle %}
   <div class="home-article-region">
