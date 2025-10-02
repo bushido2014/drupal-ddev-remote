@@ -38,3 +38,11 @@
 .login-form-wrapper input.form-submit:hover {
   background-color: var(--color-accent);
 }
+.about-title {
+  padding-right:25px;
+}
+
+.about-title h4 {
+  font-size: 1.5rem;
+}
+

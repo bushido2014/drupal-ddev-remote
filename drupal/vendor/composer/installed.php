@@ -371,14 +371,12 @@
             'dev_requirement' => false,
         ),
         'drupal/entity_usage' => array(
-            'pretty_version' => 'dev-2.x',
-            'version' => 'dev-2.x',
-            'reference' => 'a930a093e468dedf3599b4436419524d2835478c',
+            'pretty_version' => '2.0.0-beta24',
+            'version' => '2.0.0.0-beta24',
+            'reference' => '8.x-2.0-beta24',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/entity_usage',
-            'aliases' => array(
-                0 => '2.x-dev',
-            ),
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'drupal/paragraphs' => array(
