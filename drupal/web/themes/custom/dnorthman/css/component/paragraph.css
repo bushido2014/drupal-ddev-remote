@@ -28,3 +28,38 @@ grid-template-columns: repeat(2, 1fr);
 .home-services__wrapp {
     grid-template-columns: repeat(2, 1fr);
 }
+.services-content {
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.services-content h2 {
+    padding-bottom: 30px;
+}
+.services-list {
+    padding-top: 40px;
+}
+
+.services-list ul li {
+    padding: 15px 0;
+    border-bottom: 2px solid var(--color-dark-gray);
+    position: relative;
+}
+.services-list ul li::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background-image: url('../../img/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.services-list ul li a {
+    font-size: 20px;
+    color: var(--color-dark-gray);
+    font-family: var(--font-heading);
+ }
