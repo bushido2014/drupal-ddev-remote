@@ -24,3 +24,7 @@
 .home-about {
 grid-template-columns: repeat(2, 1fr);
 }
+
+.home-services__wrapp {
+    grid-template-columns: repeat(2, 1fr);
+}
