@@ -1,19 +1,19 @@
-uuid: 61de9982-8d77-4c44-be3b-3d9e7c3b18d7
+uuid: 4d070956-81e7-4d06-bb7b-6fcd3bdf68c2
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-    - paragraphs
-id: paragraph.field_home_service_list
-field_name: field_home_service_list
-entity_type: paragraph
+id: node.field_image_lawyer
+field_name: field_image_lawyer
+entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: media
 module: core
 locked: false
-cardinality: 4
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

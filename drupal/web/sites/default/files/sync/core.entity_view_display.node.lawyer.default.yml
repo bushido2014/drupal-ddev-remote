@@ -1,0 +1,56 @@
+uuid: b11ee343-8def-49d4-a680-75a668aacd64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lawyer.field_image_lawyer
+    - field.field.node.lawyer.field_lawyer_text
+    - field.field.node.lawyer.field_occupation
+    - field.field.node.lawyer.field_title
+    - node.type.lawyer
+  module:
+    - text
+    - user
+id: node.lawyer.default
+targetEntityType: node
+bundle: lawyer
+mode: default
+content:
+  field_image_lawyer:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_lawyer_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_occupation:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
