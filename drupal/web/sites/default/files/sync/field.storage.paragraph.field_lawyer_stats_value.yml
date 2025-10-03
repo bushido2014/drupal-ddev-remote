@@ -1,12 +1,12 @@
-uuid: f19197c7-a9a1-48bf-ac83-99ffbb151a9c
+uuid: f9831a1e-abdc-4719-872a-a08f3d90af8c
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_title
-field_name: field_title
-entity_type: node
+    - paragraphs
+id: paragraph.field_lawyer_stats_value
+field_name: field_lawyer_stats_value
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

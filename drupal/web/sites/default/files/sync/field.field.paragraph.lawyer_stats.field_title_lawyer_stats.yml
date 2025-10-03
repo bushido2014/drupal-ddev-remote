@@ -1,0 +1,19 @@
+uuid: daf97ff9-c9fd-4bed-8f85-752534561a6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_lawyer_stats
+    - paragraphs.paragraphs_type.lawyer_stats
+id: paragraph.lawyer_stats.field_title_lawyer_stats
+field_name: field_title_lawyer_stats
+entity_type: paragraph
+bundle: lawyer_stats
+label: 'Title Lawyer Stats'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

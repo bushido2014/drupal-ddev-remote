@@ -1,0 +1,52 @@
+uuid: ec64796a-bb45-4e48-8d4b-f322c841cf42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lawyer_stats
+    - node.type.lawyer
+    - paragraphs.paragraphs_type.lawyer_stats
+  module:
+    - entity_reference_revisions
+id: node.lawyer.field_lawyer_stats
+field_name: field_lawyer_stats
+entity_type: node
+bundle: lawyer
+label: 'Lawyer Stats'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      lawyer_stats: lawyer_stats
+    negate: 0
+    target_bundles_drag_drop:
+      article_reference:
+        weight: 9
+        enabled: false
+      home_article_about:
+        weight: 10
+        enabled: false
+      home_hero_section:
+        weight: 11
+        enabled: false
+      home_services:
+        weight: 12
+        enabled: false
+      lawyer_stats:
+        weight: 13
+        enabled: true
+      library_reference:
+        weight: 14
+        enabled: false
+      section_about_legal:
+        weight: 15
+        enabled: false
+      section_partnership:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

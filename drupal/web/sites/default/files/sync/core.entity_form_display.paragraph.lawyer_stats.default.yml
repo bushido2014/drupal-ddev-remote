@@ -1,0 +1,32 @@
+uuid: 1189aee0-4285-4c49-b931-386473ccba2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.lawyer_stats.field_lawyer_stats_value
+    - field.field.paragraph.lawyer_stats.field_title_lawyer_stats
+    - paragraphs.paragraphs_type.lawyer_stats
+id: paragraph.lawyer_stats.default
+targetEntityType: paragraph
+bundle: lawyer_stats
+mode: default
+content:
+  field_lawyer_stats_value:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_lawyer_stats:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

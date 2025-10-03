@@ -1,0 +1,10 @@
+uuid: 1e2be815-5786-415a-b153-1519abd10c19
+langcode: en
+status: true
+dependencies: {  }
+id: lawyer_stats
+label: 'Lawyer Stats'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
