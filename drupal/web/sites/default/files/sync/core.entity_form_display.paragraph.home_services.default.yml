@@ -1,0 +1,54 @@
+uuid: 9f62c119-be35-41eb-b8e9-2103110bca6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_services.field_home_service_image
+    - field.field.paragraph.home_services.field_home_service_list
+    - field.field.paragraph.home_services.field_home_service_text
+    - field.field.paragraph.home_services.field_home_service_title
+    - paragraphs.paragraphs_type.home_services
+  module:
+    - media_library
+    - text
+id: paragraph.home_services.default
+targetEntityType: paragraph
+bundle: home_services
+mode: default
+content:
+  field_home_service_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_home_service_list:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_home_service_text:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_home_service_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

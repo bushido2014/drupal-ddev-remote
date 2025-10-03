@@ -1,0 +1,15 @@
+uuid: af206cf5-cc7b-4f97-8af0-760b5d2ffd0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: home_services
+label: 'Home Services'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

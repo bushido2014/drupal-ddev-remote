@@ -1,0 +1,49 @@
+uuid: 59538cec-58af-4af6-9a94-9cd1a47ac71b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_service_section
+    - node.type.home
+    - paragraphs.paragraphs_type.home_services
+  module:
+    - entity_reference_revisions
+id: node.home.field_home_service_section
+field_name: field_home_service_section
+entity_type: node
+bundle: home
+label: 'Home Service Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      home_services: home_services
+    negate: 0
+    target_bundles_drag_drop:
+      article_reference:
+        weight: 8
+        enabled: false
+      home_article_about:
+        weight: 9
+        enabled: false
+      home_hero_section:
+        weight: 10
+        enabled: false
+      home_services:
+        weight: 11
+        enabled: true
+      library_reference:
+        weight: 12
+        enabled: false
+      section_about_legal:
+        weight: 13
+        enabled: false
+      section_partnership:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

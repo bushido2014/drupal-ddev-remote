@@ -1,16 +1,16 @@
-uuid: 48bd350b-3ff3-4fa7-919a-9c14792dccfe
+uuid: f88ca978-a29b-453b-9ebc-38fa25083267
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.home_article
-    - field.storage.block_content.field_image
+    - field.storage.paragraph.field_home_service_image
     - media.type.image
-id: block_content.home_article.field_image
-field_name: field_image
-entity_type: block_content
-bundle: home_article
-label: Image
+    - paragraphs.paragraphs_type.home_services
+id: paragraph.home_services.field_home_service_image
+field_name: field_home_service_image
+entity_type: paragraph
+bundle: home_services
+label: 'Home Service Image'
 description: ''
 required: true
 translatable: false

@@ -1,0 +1,24 @@
+uuid: da713c79-e6da-4f44-ad41-1031151803b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_home_service_text
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.home_services
+  module:
+    - text
+id: paragraph.home_services.field_home_service_text
+field_name: field_home_service_text
+entity_type: paragraph
+bundle: home_services
+label: 'Home Service Text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

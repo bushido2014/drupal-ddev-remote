@@ -1,0 +1,50 @@
+uuid: 7804786f-4df9-474c-bcbc-00f4a5f93a1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_services.field_home_service_image
+    - field.field.paragraph.home_services.field_home_service_list
+    - field.field.paragraph.home_services.field_home_service_text
+    - field.field.paragraph.home_services.field_home_service_title
+    - paragraphs.paragraphs_type.home_services
+  module:
+    - text
+id: paragraph.home_services.default
+targetEntityType: paragraph
+bundle: home_services
+mode: default
+content:
+  field_home_service_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_home_service_list:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_home_service_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_home_service_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
