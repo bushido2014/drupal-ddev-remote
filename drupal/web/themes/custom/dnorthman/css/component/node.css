@@ -46,3 +46,11 @@
   font-size: 1.5rem;
 }
 
+.lawyer-list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lawyer-item {
+  margin-bottom:20px;
+}
+
