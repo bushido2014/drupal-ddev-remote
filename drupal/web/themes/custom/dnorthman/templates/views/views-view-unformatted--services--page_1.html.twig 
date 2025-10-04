@@ -1,8 +1,0 @@
- 
-<ul class="services-list">
-  {% for row in rows %}
-    <li class="service-item">
-      {{ row.content }}
-    </li>
-  {% endfor %}
-</ul>

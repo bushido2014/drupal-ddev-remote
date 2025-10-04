@@ -1,8 +1,19 @@
-<ul class="lawyer-list">
+<section class="bg-page-title" style="background-image: url('{{ base_path ~ directory }}/img/bg-title.png');">
+    <div class="container d-flex">
+      <h1 class="page-title">Lawyer</h1>
+      </div>
+  </section>
+    
+<section class="lawyer"> 
+
+<div class="container">
+<div class="lawyer-list d-grid">
   {% for row in rows %}
-    <li class="lawyer-item">
+    <div class="lawyer-item">
       {{ row.content }}
-    </li>
+    </div>
   {% endfor %}
-</ul>
-testare
+</div>
+</div>
+
+</section>

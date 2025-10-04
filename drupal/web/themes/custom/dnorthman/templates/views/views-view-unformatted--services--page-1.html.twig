@@ -1,0 +1,15 @@
+ <section class="bg-page-title" style="background-image: url('{{ base_path ~ directory }}/img/bg-title.png');">
+    <div class="container d-flex">
+      <h1 class="page-title">Services</h1>
+      </div>
+  </section>
+
+<ul class="services-list">
+  {% for row in rows %}
+    <li class="service-item">
+      {{ row.content }}
+    </li>
+  {% endfor %}
+</ul>
+
+
