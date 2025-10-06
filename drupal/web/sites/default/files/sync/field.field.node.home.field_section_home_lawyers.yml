@@ -1,0 +1,55 @@
+uuid: f49cab84-973a-4c09-bebd-cbc8279d509d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section_home_lawyers
+    - node.type.home
+    - paragraphs.paragraphs_type.home_lawyers_section
+  module:
+    - entity_reference_revisions
+id: node.home.field_section_home_lawyers
+field_name: field_section_home_lawyers
+entity_type: node
+bundle: home
+label: 'Section Home Lawyers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      home_lawyers_section: home_lawyers_section
+    negate: 0
+    target_bundles_drag_drop:
+      article_reference:
+        weight: 10
+        enabled: false
+      home_article_about:
+        weight: 11
+        enabled: false
+      home_hero_section:
+        weight: 12
+        enabled: false
+      home_lawyers_section:
+        weight: 13
+        enabled: true
+      home_services:
+        weight: 14
+        enabled: false
+      lawyer_stats:
+        weight: 15
+        enabled: false
+      library_reference:
+        weight: 16
+        enabled: false
+      section_about_legal:
+        weight: 17
+        enabled: false
+      section_partnership:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

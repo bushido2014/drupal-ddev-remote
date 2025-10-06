@@ -1,0 +1,10 @@
+uuid: a65c3a97-3912-48a1-9860-81328da27c12
+langcode: en
+status: true
+dependencies: {  }
+id: home_lawyers_section
+label: 'Home Lawyers Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.home.field_hero_section
     - field.field.node.home.field_home_article_about
     - field.field.node.home.field_home_service_section
+    - field.field.node.home.field_section_home_lawyers
     - field.field.node.home.field_section_partnership
     - node.type.home
   module:
@@ -61,6 +62,24 @@ content:
   field_home_service_section:
     type: paragraphs
     weight: 124
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_section_home_lawyers:
+    type: paragraphs
+    weight: 125
     region: content
     settings:
       title: Paragraph
