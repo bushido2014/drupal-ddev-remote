@@ -1,15 +1,16 @@
 <section class="lawyers-section">
   <div class="container">
+  <div class="section-title">
   <h4 class="before-title">{{paragraph.field_before_title.value}}</h4>
   <h2>{{paragraph.field_title.value}}</h2>
-
-<div class="lawyer-list d-grid">
+</div>
+<div class="home-lawyer-list d-grid">
 {% for item in paragraph.field_home_field_lawyers %}
         {% set lawyer = item.entity %}
         <div class="lawyer-item">
-       {% if lawyer.field_image_lawyer.entity is defined %}
+     {% if lawyer.field_image_lawyer is not empty %}
   <div class="lawyer-image">
-    <img src="{{ file_url(lawyer.field_image_lawyer.entity.uri.value) }}" alt="{{ lawyer.field_image_lawyer.alt }}">
+    <img src="{{ lawyer.field_image_lawyer|file_url }}" alt="{{ lawyer.field_image_lawyer.alt }}">
   </div>
 {% endif %}
           <div class="lawyer-name">{{ lawyer.label }}</div>
@@ -22,5 +23,8 @@
 
 
 
+
   </div>
   <section>
+
+  
