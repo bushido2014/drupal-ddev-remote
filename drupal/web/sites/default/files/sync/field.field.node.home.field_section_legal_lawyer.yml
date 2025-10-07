@@ -11,9 +11,9 @@ id: node.home.field_section_legal_lawyer
 field_name: field_section_legal_lawyer
 entity_type: node
 bundle: home
-label: 'Section Legal Lawyer'
+label: 'Legal Lawyer'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

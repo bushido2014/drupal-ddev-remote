@@ -1,12 +1,7 @@
 uuid: 254156d7-c780-4f02-be38-e9788fdec12e
 langcode: en
 status: true
-dependencies:
-  module:
-    - paragraphs_library
-third_party_settings:
-  paragraphs_library:
-    allow_library_conversion: true
+dependencies: {  }
 id: section_legal_lawyer
 label: 'Section Legal Lawyer'
 icon_uuid: null

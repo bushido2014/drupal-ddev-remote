@@ -67,3 +67,12 @@ grid-template-columns: repeat(2, 1fr);
  .home-lawyer-list {
     grid-template-columns: repeat(4, 1fr);
  }
+
+ .section-about-legal {
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+ }
+ .section-about-legal h2 {
+    color: var(--color-white) !important;
+ }
