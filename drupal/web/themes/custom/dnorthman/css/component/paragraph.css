@@ -68,11 +68,11 @@ grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
  }
 
- .section-about-legal {
+ .about-legal-lawyer {
     text-align: center;
     background-color: var(--color-primary);
     color: var(--color-white);
  }
- .section-about-legal h2 {
+ .about-legal-lawyer h2 {
     color: var(--color-white) !important;
  }

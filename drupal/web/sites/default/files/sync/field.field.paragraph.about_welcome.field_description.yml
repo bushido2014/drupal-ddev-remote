@@ -1,0 +1,24 @@
+uuid: 1b601ce6-ab92-468f-b85c-500f64a7b75d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.about_welcome
+  module:
+    - text
+id: paragraph.about_welcome.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: about_welcome
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

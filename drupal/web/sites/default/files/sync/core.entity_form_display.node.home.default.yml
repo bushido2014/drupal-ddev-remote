@@ -7,11 +7,9 @@ dependencies:
     - field.field.node.home.field_home_article_about
     - field.field.node.home.field_home_service_section
     - field.field.node.home.field_section_home_lawyers
-    - field.field.node.home.field_section_legal_lawyer
     - field.field.node.home.field_section_partnership
     - node.type.home
   module:
-    - entity_reference_revisions
     - paragraphs
     - path
 id: node.home.default
@@ -96,16 +94,6 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings: {  }
-  field_section_legal_lawyer:
-    type: entity_reference_revisions_autocomplete
-    weight: 126
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_section_partnership:
     type: paragraphs

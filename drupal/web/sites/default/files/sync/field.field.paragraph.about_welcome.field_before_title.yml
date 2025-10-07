@@ -1,0 +1,19 @@
+uuid: 5c1eb6fe-2d12-4701-b0f5-1275473399a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_before_title
+    - paragraphs.paragraphs_type.about_welcome
+id: paragraph.about_welcome.field_before_title
+field_name: field_before_title
+entity_type: paragraph
+bundle: about_welcome
+label: before_title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

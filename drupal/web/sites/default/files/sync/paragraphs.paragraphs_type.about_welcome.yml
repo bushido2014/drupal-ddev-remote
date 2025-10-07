@@ -1,0 +1,10 @@
+uuid: ceee6ad9-9199-4464-aec3-3cc27e9f8d0d
+langcode: en
+status: true
+dependencies: {  }
+id: about_welcome
+label: 'About Welcome'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
