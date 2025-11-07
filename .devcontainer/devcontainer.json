@@ -1,21 +1,27 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "features": {
-        "ghcr.io/ddev/ddev/install-ddev:latest": {}
+  "name": "Drupal Development",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "forwardPorts": [8080, 3306],
+  "portsAttributes": {
+    "8080": {
+      "label": "Drupal",
+      "onAutoForward": "openBrowser"
     },
-    "portsAttributes": {
-        "3306": {
-            "label": "database"
-        },
-        "8027": {
-            "label": "mailpit"
-        },
-        "8080": {
-            "label": "web http"
-        },
-        "8443": {
-            "label": "web https"
-        }
-    },
-    "postCreateCommand": "bash .devcontainer/setup_project.sh"
+    "3306": {
+      "label": "MariaDB"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup_project.sh",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
 }
