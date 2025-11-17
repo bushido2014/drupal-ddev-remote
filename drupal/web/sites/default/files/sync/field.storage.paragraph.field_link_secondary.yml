@@ -1,12 +1,12 @@
-uuid: 2a19862f-f962-4e19-9562-669f92f7b21c
+uuid: 22e9d9ef-8e60-4b68-b7f8-ba033b3e9401
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - paragraphs
-id: paragraph.field_home_about_link
-field_name: field_home_about_link
+id: paragraph.field_link_secondary
+field_name: field_link_secondary
 entity_type: paragraph
 type: link
 settings: {  }

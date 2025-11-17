@@ -1,0 +1,22 @@
+uuid: 8b7701ec-f290-4366-afeb-8f365b070783
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: cases
+label: Cases
+type: 'canonical_entities:node'
+pattern: 'cases/[node:title]'
+selection_criteria:
+  34a052de-fa09-4ce4-a3e3-8365d3db52c4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 34a052de-fa09-4ce4-a3e3-8365d3db52c4
+    context_mapping:
+      node: node
+    bundles:
+      cases: cases
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -5,8 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.home_article_about.field_before_title
     - field.field.paragraph.home_article_about.field_description_about_us
-    - field.field.paragraph.home_article_about.field_home_about_link
     - field.field.paragraph.home_article_about.field_image_about_us
+    - field.field.paragraph.home_article_about.field_link_secondary
     - field.field.paragraph.home_article_about.field_title_about_us
     - paragraphs.paragraphs_type.home_article_about
   module:
@@ -32,7 +32,16 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  field_home_about_link:
+  field_image_about_us:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link_secondary:
     type: link
     label: hidden
     settings:
@@ -42,16 +51,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 4
-    region: content
-  field_image_about_us:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
   field_title_about_us:
     type: string

@@ -1,0 +1,38 @@
+uuid: 01c8cda7-dcdc-45d4-a0e0-08a1edebf8f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cases.body
+    - field.field.node.cases.field_client_name
+    - field.field.node.cases.field_client_occupation
+    - field.field.node.cases.field_image_cases
+    - field.field.node.cases.field_image_client
+    - node.type.cases
+  module:
+    - text
+    - user
+id: node.cases.teaser
+targetEntityType: node
+bundle: cases
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_client_name: true
+  field_client_occupation: true
+  field_image_cases: true
+  field_image_client: true

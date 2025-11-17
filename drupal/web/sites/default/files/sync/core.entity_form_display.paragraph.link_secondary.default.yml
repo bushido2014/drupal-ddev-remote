@@ -1,0 +1,25 @@
+uuid: 60c44bbe-3e94-4e92-94f6-3b98f56bedf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_secondary.field_link_secondary
+    - paragraphs.paragraphs_type.link_secondary
+  module:
+    - link
+id: paragraph.link_secondary.default
+targetEntityType: paragraph
+bundle: link_secondary
+mode: default
+content:
+  field_link_secondary:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -5,8 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.home_article_about.field_before_title
     - field.field.paragraph.home_article_about.field_description_about_us
-    - field.field.paragraph.home_article_about.field_home_about_link
     - field.field.paragraph.home_article_about.field_image_about_us
+    - field.field.paragraph.home_article_about.field_link_secondary
     - field.field.paragraph.home_article_about.field_title_about_us
     - paragraphs.paragraphs_type.home_article_about
   module:
@@ -36,20 +36,20 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  field_home_about_link:
-    type: link_default
-    weight: 4
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
   field_image_about_us:
     type: media_library_widget
     weight: 2
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_link_secondary:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_title_about_us:
     type: string_textfield

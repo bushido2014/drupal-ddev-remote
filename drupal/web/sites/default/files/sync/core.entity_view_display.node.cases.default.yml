@@ -1,0 +1,66 @@
+uuid: 1f9bc7fd-7c7a-4213-939a-b7e58268a830
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cases.body
+    - field.field.node.cases.field_client_name
+    - field.field.node.cases.field_client_occupation
+    - field.field.node.cases.field_image_cases
+    - field.field.node.cases.field_image_client
+    - node.type.cases
+  module:
+    - text
+    - user
+id: node.cases.default
+targetEntityType: node
+bundle: cases
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_client_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_client_occupation:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_image_cases:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image_client:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

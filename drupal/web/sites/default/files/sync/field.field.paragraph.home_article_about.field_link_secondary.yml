@@ -1,19 +1,19 @@
-uuid: 10fa5e8f-4b10-4458-b012-204b11c177dc
+uuid: d823b85e-3232-48c8-bdae-4908493d5f37
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_home_about_link
+    - field.storage.paragraph.field_link_secondary
     - paragraphs.paragraphs_type.home_article_about
   module:
     - link
-id: paragraph.home_article_about.field_home_about_link
-field_name: field_home_about_link
+id: paragraph.home_article_about.field_link_secondary
+field_name: field_link_secondary
 entity_type: paragraph
 bundle: home_article_about
 label: 'Home about link'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
