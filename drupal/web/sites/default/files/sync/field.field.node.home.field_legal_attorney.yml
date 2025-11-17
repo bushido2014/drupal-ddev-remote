@@ -1,18 +1,18 @@
-uuid: efb568e1-63b7-4e54-868e-5ad9905f1ae4
+uuid: 6669a416-68e3-4d07-9b62-e7ef5e160dd1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_section_legal_lawyer
+    - field.storage.node.field_legal_attorney
     - node.type.home
-    - paragraphs.paragraphs_type.section_legal_lawyer
+    - paragraphs.paragraphs_type.legal_attorney
   module:
     - entity_reference_revisions
-id: node.home.field_section_legal_lawyer
-field_name: field_section_legal_lawyer
+id: node.home.field_legal_attorney
+field_name: field_legal_attorney
 entity_type: node
 bundle: home
-label: 'Section Legal Lawyer'
+label: 'Legal Attorney'
 description: ''
 required: false
 translatable: false
@@ -22,38 +22,38 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      section_legal_lawyer: section_legal_lawyer
+      legal_attorney: legal_attorney
     negate: 0
     target_bundles_drag_drop:
       about_welcome:
-        weight: 12
+        weight: 16
         enabled: false
       article_reference:
-        weight: 13
+        weight: 17
         enabled: false
       home_article_about:
-        weight: 14
+        weight: 18
         enabled: false
       home_cases_section:
         weight: 19
         enabled: false
       home_hero_section:
-        weight: 15
+        weight: 20
         enabled: false
       home_lawyers_section:
-        weight: 16
+        weight: 21
         enabled: false
       home_services:
-        weight: 17
+        weight: 22
         enabled: false
       lawyer_stats:
-        weight: 18
+        weight: 23
         enabled: false
       legal_attorney:
         weight: 24
-        enabled: false
+        enabled: true
       library_reference:
-        weight: 19
+        weight: 25
         enabled: false
       link:
         weight: 26
@@ -62,12 +62,12 @@ settings:
         weight: 27
         enabled: false
       section_about_legal:
-        weight: 20
+        weight: 28
         enabled: false
       section_legal_lawyer:
-        weight: 21
-        enabled: true
+        weight: 29
+        enabled: false
       section_partnership:
-        weight: 22
+        weight: 30
         enabled: false
 field_type: entity_reference_revisions

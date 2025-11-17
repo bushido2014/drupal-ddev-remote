@@ -1,0 +1,19 @@
+uuid: fba51349-c0fb-4d00-b851-6f7d38bc5224
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_legal_attorney_list
+    - paragraphs.paragraphs_type.legal_attorney
+id: paragraph.legal_attorney.field_legal_attorney_list
+field_name: field_legal_attorney_list
+entity_type: paragraph
+bundle: legal_attorney
+label: 'Legal Attorney List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+uuid: d6c12b74-13a8-4820-a217-56e5649f53e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: legal_attorney
+label: 'Legal Attorney'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -5,7 +5,9 @@ dependencies:
   config:
     - field.field.node.home.field_hero_section
     - field.field.node.home.field_home_article_about
+    - field.field.node.home.field_home_cases_section
     - field.field.node.home.field_home_service_section
+    - field.field.node.home.field_legal_attorney
     - field.field.node.home.field_section_home_lawyers
     - field.field.node.home.field_section_legal_lawyer
     - field.field.node.home.field_section_partnership
@@ -36,6 +38,15 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
+  field_home_cases_section:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
   field_home_service_section:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -44,6 +55,15 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_legal_attorney:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_section_home_lawyers:
     type: entity_reference_revisions_entity_view

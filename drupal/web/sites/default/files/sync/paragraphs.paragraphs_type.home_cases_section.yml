@@ -1,0 +1,10 @@
+uuid: 5ae928eb-fea4-40c1-b972-061f191e60e7
+langcode: en
+status: true
+dependencies: {  }
+id: home_cases_section
+label: 'Home Cases Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

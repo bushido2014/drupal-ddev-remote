@@ -1,0 +1,42 @@
+uuid: 115f4cfc-4969-4a6b-8f04-1bf0204374fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.legal_attorney.field_image
+    - field.field.paragraph.legal_attorney.field_legal_attorney_list
+    - field.field.paragraph.legal_attorney.field_title
+    - paragraphs.paragraphs_type.legal_attorney
+  module:
+    - media_library
+id: paragraph.legal_attorney.default
+targetEntityType: paragraph
+bundle: legal_attorney
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_legal_attorney_list:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

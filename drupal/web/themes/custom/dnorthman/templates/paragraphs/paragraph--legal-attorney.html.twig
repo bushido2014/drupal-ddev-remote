@@ -1,0 +1,30 @@
+<section class="legal-attorney">
+  <div class="container">
+     <div class="legal-attorney-wrapp d-grid cols-2">
+        <div class="legal-attorney-item">
+            
+           {% if paragraph.field_image.entity %}
+          {% set media = paragraph.field_image.entity %}
+          {% if media.field_media_image.entity %}
+            <img
+              src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+              alt="{{ media.field_media_image.alt }}"
+              loading="lazy"
+            />
+          {% endif %}
+        {% endif %}
+
+        </div>
+        <div class="legal-attorney-item">
+          <h2>{{ paragraph.field_title.value }}</h2>
+          <div class="legal-attorney-list">
+  <ul>
+    {% for item in paragraph.field_legal_attorney_list %}
+      <li>{{ item.value }}</li>
+    {% endfor %}
+  </ul>
+</div>
+        </div>
+     </div>
+   </div>
+</section> 

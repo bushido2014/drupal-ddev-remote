@@ -1,0 +1,56 @@
+uuid: f58cda13-aedf-4beb-a7ba-93d0963c7800
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_cases_section.field_before_title
+    - field.field.paragraph.home_cases_section.field_home_cases
+    - field.field.paragraph.home_cases_section.field_link_simple
+    - field.field.paragraph.home_cases_section.field_title
+    - paragraphs.paragraphs_type.home_cases_section
+  module:
+    - entity_reference_revisions
+    - link
+id: paragraph.home_cases_section.default
+targetEntityType: paragraph
+bundle: home_cases_section
+mode: default
+content:
+  field_before_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_home_cases:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link_simple:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

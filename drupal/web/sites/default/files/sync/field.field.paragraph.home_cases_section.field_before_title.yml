@@ -1,0 +1,19 @@
+uuid: f9210c69-4c21-4863-ab5e-9e70b504c02c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_before_title
+    - paragraphs.paragraphs_type.home_cases_section
+id: paragraph.home_cases_section.field_before_title
+field_name: field_before_title
+entity_type: paragraph
+bundle: home_cases_section
+label: before_title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
