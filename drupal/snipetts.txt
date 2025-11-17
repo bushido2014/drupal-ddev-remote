@@ -1,0 +1,9 @@
+curl -fsSL https://ddev.com/install.sh | bash
+
+ddev composer update
+
+ddev composer require drupal/entity_usage
+
+ddev composer require 'drupal/entity_usage:^2.0@beta'
+
+ddev drush cr

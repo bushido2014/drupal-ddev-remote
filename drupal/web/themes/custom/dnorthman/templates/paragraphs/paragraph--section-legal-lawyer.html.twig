@@ -1,8 +1,8 @@
 <section class="about-legal-lawyer">
 <div class="container">
 
-<h2>{{content.field_title}}</h2>
- <p>{{ content.field_description }}</p>
+<h2>{{ paragraph.field_title.value }}</h2>
+ {{paragraph.field_description.value|raw}}
   {% if content.field_link %}
     <div class="about-legal">
       {{ content.field_link }}
