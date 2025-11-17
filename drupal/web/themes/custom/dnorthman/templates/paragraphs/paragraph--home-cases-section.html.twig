@@ -1,0 +1,50 @@
+<section class="home-cases">
+  <div class="container">
+    <div class="home-cases-wrapp d-grid cols-2">
+      <div class="home-cases-item cases-content">
+        <h4>{{ paragraph.field_before_title.value }}</h4>
+        <div class="home-cases-title">
+        <h2>{{ paragraph.field_title.value }}</h2>
+        </div>
+        {% if content.field_link_simple %}
+          {{ content.field_link_simple }}
+        {% endif %}
+      </div>
+      
+      <div class="home-cases-item">
+        <div class="cases-list d-grid">
+          {% for item in paragraph.field_home_cases %}
+            {% if item.entity %}
+              {% set case = item.entity %}
+              <div class="case-card">
+                {# Imaginea case-ului #}
+                {% if case.field_image_cases.entity %}
+                  {% set media = case.field_image_cases.entity %}
+                  {% if media.field_media_image.entity %}
+                    <div class="case-card__image">
+                      <img
+                        src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                        alt="{{ media.field_media_image.alt }}"
+                        loading="lazy"
+                      />
+                    </div>
+                  {% endif %}
+                {% endif %}
+
+                {# Titlul case-ului #}
+                <h3 class="case-card__title">{{ case.label }}</h3>
+                 {{ case.body.value|slice(0, 200)|raw }}…
+                {# Button See Detail #}
+                <div class="see-more">
+                <a href="{{ path('entity.node.canonical', {'node': case.id}) }}" class="btn btn-secondary">
+                  See Detail
+                </a>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

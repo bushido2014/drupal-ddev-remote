@@ -76,3 +76,11 @@ grid-template-columns: repeat(2, 1fr);
  .about-legal-lawyer h2 {
     color: var(--color-white) !important;
  }
+
+ .home-cases-title {
+    padding: 50px 30px;
+    border-bottom: 1px solid var(--color-dark-gray);
+ }
+ .link-simple-wrapper {
+    margin-top: 25px;
+ }
