@@ -1,0 +1,18 @@
+uuid: c32b5f45-5c44-4e3b-8bc6-e13799c4eb83
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Testimonials
+type: testimonials
+description: 'Testimonials Slider'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true
