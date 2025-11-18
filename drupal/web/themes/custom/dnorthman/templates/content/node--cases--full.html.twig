@@ -1,0 +1,53 @@
+<article{{ attributes.addClass('cases-node') }}>
+  <div class="container">
+
+    <div class="d-flex">
+      <div style="width:70%">
+        {{ content.field_image_cases }}
+      </div>
+      <h2 style="width:30%">{{ label }}</h2>
+    </div>
+
+    <div class="d-flex">
+      <div style="width:70%">
+        {{ content.body }}
+      </div>
+      <div style="width:30%">
+        {{ content.field_image_client }}
+        {{ content.field_client_name }}
+        {{ content.field_client_occupation }}
+      </div>
+    </div>
+
+    <section class="attorney-cases">
+      <div class="attorney-cases-title">
+        <h2>Attorney in this case</h2>
+      </div>
+
+      <div class="attorney-cases-wrapp d-grid">
+        {% for item in node.field_attorney %}
+          {% set lawyer = item.entity %}
+          {% if lawyer %}
+            <a href="{{ path('entity.node.canonical', {'node': lawyer.id}) }}" class="lawyer-item">
+              
+              {% if lawyer.field_image_lawyer.entity.field_media_image.entity %}
+                <img 
+                  src="{{ file_url(lawyer.field_image_lawyer.entity.field_media_image.entity.uri.value) }}" 
+                  alt="{{ lawyer.field_image_lawyer.entity.field_media_image.alt }}" 
+                  loading="lazy"
+                />
+              {% endif %}
+
+              <h3 class="lawyer-name">{{ lawyer.label }}</h3>
+
+              {% if lawyer.field_occupation.value %}
+                <p class="lawyer-occupation">{{ lawyer.field_occupation.value }}</p>
+              {% endif %}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+  </div>
+</article>
