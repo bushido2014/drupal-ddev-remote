@@ -1,0 +1,64 @@
+<section class="testimonial-section">
+  <div class="container">
+
+    <div class="testimonial-content">
+      <div>
+        <h4>{{ paragraph.field_before_title.value }}</h4>
+        <h2>{{ paragraph.field_title.value }}</h2>
+      </div>
+
+      <div>
+        {{ content.field_image }}
+      </div>
+    </div>
+
+    {# --- SWIPER SLIDER --- #}
+    <div class="swiper-container testimonial-slider">
+      <div class="swiper-wrapper">
+
+        {% for item in paragraph.field_testimonials_slider %}
+          {% set testimonial = item.entity %}
+          {% if testimonial %}
+
+          <div class="swiper-slide testimonial-slide">
+
+            <div class="text-slide">
+              <h4>{{ testimonial.field_testimonial_name.value }}</h4>
+              <p>{{ testimonial.body.value|raw }}</p>
+            </div>
+
+            <div class="slider_separator"></div>
+
+            <div class="client-wrapp d-flex">
+
+              <div class="client-info d-flex">
+                <div class="client-logo">
+                  {% if testimonial.field_testimonial_image.entity %}
+                    {% set media = testimonial.field_testimonial_image.entity %}
+                    {% if media.field_media_image.entity %}
+                      <img
+                        src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+                        alt="{{ testimonial.field_testimonial_name.value }}"
+                        loading="lazy"
+                      />
+                    {% endif %}
+                  {% endif %}
+                </div>
+
+                <div class="client-desc">
+                  <div class="client-name">{{ testimonial.field_testimonial_name.value }}</div>
+                  <p>{{ testimonial.field_testimonial_occupation.value }}</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+
+  </div>
+</section>

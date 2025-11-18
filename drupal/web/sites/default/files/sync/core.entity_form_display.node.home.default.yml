@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.home.field_section_home_lawyers
     - field.field.node.home.field_section_legal_lawyer
     - field.field.node.home.field_section_partnership
+    - field.field.node.home.field_section_testimonials
     - node.type.home
   module:
     - paragraphs
@@ -180,6 +181,26 @@ content:
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: section_partnership
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_section_testimonials:
+    type: paragraphs
+    weight: 129
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: testimonials
       features:
         add_above: '0'
         collapse_edit_all: collapse_edit_all

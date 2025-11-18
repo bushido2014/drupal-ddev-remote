@@ -1,0 +1,76 @@
+uuid: e7114d80-8ee1-4050-ab0d-9fa687a15942
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section_testimonials
+    - node.type.home
+    - paragraphs.paragraphs_type.testimonials
+  module:
+    - entity_reference_revisions
+id: node.home.field_section_testimonials
+field_name: field_section_testimonials
+entity_type: node
+bundle: home
+label: 'Section Testimonials'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      testimonials: testimonials
+    negate: 0
+    target_bundles_drag_drop:
+      about_welcome:
+        weight: 17
+        enabled: false
+      article_reference:
+        weight: 18
+        enabled: false
+      home_article_about:
+        weight: 19
+        enabled: false
+      home_cases_section:
+        weight: 20
+        enabled: false
+      home_hero_section:
+        weight: 21
+        enabled: false
+      home_lawyers_section:
+        weight: 22
+        enabled: false
+      home_services:
+        weight: 23
+        enabled: false
+      lawyer_stats:
+        weight: 24
+        enabled: false
+      legal_attorney:
+        weight: 25
+        enabled: false
+      library_reference:
+        weight: 26
+        enabled: false
+      link:
+        weight: 27
+        enabled: false
+      link_secondary:
+        weight: 28
+        enabled: false
+      section_about_legal:
+        weight: 29
+        enabled: false
+      section_legal_lawyer:
+        weight: 30
+        enabled: false
+      section_partnership:
+        weight: 31
+        enabled: false
+      testimonials:
+        weight: 32
+        enabled: true
+field_type: entity_reference_revisions

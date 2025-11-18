@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.home.field_section_home_lawyers
     - field.field.node.home.field_section_legal_lawyer
     - field.field.node.home.field_section_partnership
+    - field.field.node.home.field_section_testimonials
     - node.type.home
   module:
     - entity_reference_revisions
@@ -91,6 +92,15 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_section_testimonials:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 109
     region: content
   links:
     settings: {  }
