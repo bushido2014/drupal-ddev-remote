@@ -84,3 +84,37 @@ grid-template-columns: repeat(2, 1fr);
  .link-simple-wrapper {
     margin-top: 25px;
  }
+
+ /* .testimonial-content_title {
+    width: 40%;
+ }
+ .testimonial-content_img {
+    width: 60%;
+ } */
+
+.testimonial-hero {
+    margin-bottom: 30px;
+}
+.swiper-slide {
+  box-sizing: border-box;
+}
+
+.testimonial-slider-section .swiper-container {
+  width: 100%;
+  overflow: hidden; /* important ca slide-urile să nu iasă din container */
+  max-width:80rem;
+}
+
+.client-logo {
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.client-logo img{
+   width: 250px;
+    height: 250px;              
+    object-fit: cover;           
+    object-position: center top; 
+    border-radius: 50%;
+    
+}

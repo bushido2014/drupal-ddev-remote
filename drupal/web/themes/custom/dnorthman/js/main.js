@@ -10,6 +10,8 @@
   const swiper = new Swiper('.testimonial-slider', {
     loop:true,
     slidesPerView: 1,
+    spaceBetween: 60,
+    
   });
 
 

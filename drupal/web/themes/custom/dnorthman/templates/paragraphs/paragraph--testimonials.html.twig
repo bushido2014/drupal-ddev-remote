@@ -1,16 +1,22 @@
 <section class="testimonial-section">
   <div class="container">
 
-    <div class="testimonial-content">
-      <div>
-        <h4>{{ paragraph.field_before_title.value }}</h4>
-        <h2>{{ paragraph.field_title.value }}</h2>
-      </div>
+   
 
-      <div>
-        {{ content.field_image }}
+<div class="testimonial-hero d-flex">
+  
+    <div class="testimonial-hero__content">
+      <div class="testimonial-hero__text">
+        <h4><span class="testimonial-hero__pretitle">{{ paragraph.field_before_title.value }}</span></h4>
+        <h2 class="testimonial-hero__title">{{ paragraph.field_title.value }}</h2>
       </div>
     </div>
+    <div class="testimonial-hero__image">
+      {{ content.field_image }}
+    </div>
+  
+</div>
+
 
     {# --- SWIPER SLIDER --- #}
     <div class="swiper-container testimonial-slider">
@@ -22,10 +28,7 @@
 
           <div class="swiper-slide testimonial-slide">
 
-            <div class="text-slide">
-              <h4>{{ testimonial.field_testimonial_name.value }}</h4>
-              <p>{{ testimonial.body.value|raw }}</p>
-            </div>
+            
 
             <div class="slider_separator"></div>
 
@@ -46,6 +49,10 @@
                 </div>
 
                 <div class="client-desc">
+                <div class="text-slide">
+              <h4>{{ testimonial.label }}</h4>
+              <p>{{ testimonial.body.value|raw }}</p>
+            </div>
                   <div class="client-name">{{ testimonial.field_testimonial_name.value }}</div>
                   <p>{{ testimonial.field_testimonial_occupation.value }}</p>
                 </div>
