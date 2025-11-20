@@ -1,0 +1,79 @@
+uuid: 997e595e-9f81-4e1d-9cdf-d1d891bbcb2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_article_reference
+    - node.type.about_us
+    - paragraphs.paragraphs_type.article_reference
+  module:
+    - entity_reference_revisions
+id: node.about_us.field_about_article_reference
+field_name: field_about_article_reference
+entity_type: node
+bundle: about_us
+label: 'About Article Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      article_reference: article_reference
+    negate: 0
+    target_bundles_drag_drop:
+      about_welcome:
+        weight: 18
+        enabled: false
+      article_reference:
+        weight: 19
+        enabled: true
+      home_article_about:
+        weight: 20
+        enabled: false
+      home_cases_section:
+        weight: 21
+        enabled: false
+      home_hero_section:
+        weight: 22
+        enabled: false
+      home_lawyers_section:
+        weight: 23
+        enabled: false
+      home_services:
+        weight: 24
+        enabled: false
+      lawyer_stats:
+        weight: 25
+        enabled: false
+      legal_attorney:
+        weight: 26
+        enabled: false
+      library_reference:
+        weight: 27
+        enabled: false
+      link:
+        weight: 28
+        enabled: false
+      link_secondary:
+        weight: 29
+        enabled: false
+      section_about_legal:
+        weight: 30
+        enabled: false
+      section_legal_lawyer:
+        weight: 31
+        enabled: false
+      section_news:
+        weight: 32
+        enabled: false
+      section_partnership:
+        weight: 33
+        enabled: false
+      testimonials:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions
