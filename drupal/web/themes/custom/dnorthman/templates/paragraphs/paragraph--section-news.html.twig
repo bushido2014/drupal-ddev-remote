@@ -5,31 +5,22 @@
       <h2>{{ paragraph.field_title.value }}</h2>
     </div>
 
-    <div class="home-news-list d-grid">
+    <div class="home-news-list d-grid ">
       {% for item in paragraph.field_news_home %}
         {% set news = item.entity %}
 
-        {# Pregătire imagine #}
-        {% set image = null %}
-        {% if news.field_image.entity is defined %}
-          {% set media = news.field_image.entity %}
-          {% if media.field_media_image.entity is defined %}
-            {% set image = media.field_media_image.entity %}
-          {% endif %}
-        {% endif %}
+       
 
         <div class="news-item">
 
-          {# Imagine #}
-          {% if image %}
+           
+
+           {% if news.field_image is not empty %}
             <div class="news-image">
-              <img
-                src="{{ file_url(image.uri.value)|image_style('medium') }}"
-                alt="{{ image.alt|default(news.label) }}"
-                loading="lazy"
-              >
+             
+               <img src="{{ news.field_image|file_url }}" alt="{{ news.field_image.alt }}">
             </div>
-          {% endif %}
+         {% endif %}
 
           {# Titlu #}
           <h3 class="news-title">

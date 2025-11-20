@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_legal_lawyer
     - node.type.about_us
-    - paragraphs.paragraphs_type.section_legal_lawyer
   module:
     - entity_reference_revisions
 id: node.about_us.field_legal_lawyer
@@ -19,43 +18,11 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:paragraph'
+  handler: 'default:paragraphs_library_item'
   handler_settings:
-    target_bundles:
-      section_legal_lawyer: section_legal_lawyer
-    negate: 0
-    target_bundles_drag_drop:
-      about_welcome:
-        weight: 12
-        enabled: false
-      article_reference:
-        weight: 13
-        enabled: false
-      home_article_about:
-        weight: 14
-        enabled: false
-      home_hero_section:
-        weight: 15
-        enabled: false
-      home_lawyers_section:
-        weight: 16
-        enabled: false
-      home_services:
-        weight: 17
-        enabled: false
-      lawyer_stats:
-        weight: 18
-        enabled: false
-      library_reference:
-        weight: 19
-        enabled: false
-      section_about_legal:
-        weight: 20
-        enabled: false
-      section_legal_lawyer:
-        weight: 21
-        enabled: true
-      section_partnership:
-        weight: 22
-        enabled: false
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
 field_type: entity_reference_revisions

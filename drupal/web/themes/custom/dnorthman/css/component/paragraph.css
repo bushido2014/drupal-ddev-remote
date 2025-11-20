@@ -45,18 +45,43 @@ grid-template-columns: repeat(2, 1fr);
     border-bottom: 2px solid var(--color-dark-gray);
     position: relative;
 }
-.services-list ul li::after {
-    content: '';
+
+.icon-arrow {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+
+.legal-attorney-list ul {
+    margin-top: 30px;
+}
+
+.legal-attorney-list li{
+  font-size: 22px;
+  padding: 15px 0;
+}
+.legal-attorney-list .icon {
+    margin-right: 20px;
+}
+.legal-attorney-list .icon .fa-circle-check {
+    color: var(--color-primary);
+}
+
+/* .services-list ul li::after {
+    content: '\f061';
     position: absolute;
     right: 0;
     top: 10px;
     width: 40px;
     height: 40px;
     display: inline-block;
-    background-image: url('../../img/arrow-right.svg');
+    text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+    /* background-image: url('../../img/arrow-right.svg');
     background-repeat: no-repeat;
-    background-position: center; 
-}
+    background-position: center;  */
+} */
 
 .services-list ul li a {
     font-size: 20px;
@@ -117,4 +142,16 @@ grid-template-columns: repeat(2, 1fr);
     object-position: center top; 
     border-radius: 50%;
     
+}
+
+.home-news-list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.news-title a{
+  color: var(--color-primary)
+}
+
+.news-item .see-more {
+    padding: 25px 0;
 }

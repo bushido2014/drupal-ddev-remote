@@ -20,7 +20,7 @@
           <div class="legal-attorney-list">
   <ul>
     {% for item in paragraph.field_legal_attorney_list %}
-      <li>{{ item.value }}</li>
+      <li class="d-flex"><span class="icon"><i class="fa-solid fa-circle-check"></i></span><span>{{ item.value }}</span></li>
     {% endfor %}
   </ul>
 </div>

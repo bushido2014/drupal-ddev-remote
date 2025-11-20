@@ -5,13 +5,13 @@ dependencies:
   module:
     - entity_reference_revisions
     - node
-    - paragraphs
+    - paragraphs_library
 id: node.field_legal_lawyer
 field_name: field_legal_lawyer
 entity_type: node
 type: entity_reference_revisions
 settings:
-  target_type: paragraph
+  target_type: paragraphs_library_item
 module: entity_reference_revisions
 locked: false
 cardinality: -1
