@@ -1,0 +1,31 @@
+uuid: 8e8b4b35-0929-4ee7-9b21-4e70d2e50d4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_home
+    - node.type.news
+    - paragraphs.paragraphs_type.section_news
+  module:
+    - entity_reference_revisions
+id: paragraph.section_news.field_news_home
+field_name: field_news_home
+entity_type: paragraph
+bundle: section_news
+label: 'News Home'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

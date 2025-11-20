@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.home.field_home_cases_section
     - field.field.node.home.field_home_service_section
     - field.field.node.home.field_legal_attorney
+    - field.field.node.home.field_news
     - field.field.node.home.field_section_home_lawyers
     - field.field.node.home.field_section_legal_lawyer
     - field.field.node.home.field_section_partnership
@@ -65,6 +66,15 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 108
+    region: content
+  field_news:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 110
     region: content
   field_section_home_lawyers:
     type: entity_reference_revisions_entity_view

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.home.field_home_cases_section
     - field.field.node.home.field_home_service_section
     - field.field.node.home.field_legal_attorney
+    - field.field.node.home.field_news
     - field.field.node.home.field_section_home_lawyers
     - field.field.node.home.field_section_legal_lawyer
     - field.field.node.home.field_section_partnership
@@ -121,6 +122,26 @@ content:
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: legal_attorney
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_news:
+    type: paragraphs
+    weight: 130
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: section_news
       features:
         add_above: '0'
         collapse_edit_all: collapse_edit_all

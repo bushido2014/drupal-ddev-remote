@@ -1,0 +1,45 @@
+uuid: 47c290c7-ce47-4a46-bc87-99a9b936d818
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_news.field_before_title
+    - field.field.paragraph.section_news.field_news_home
+    - field.field.paragraph.section_news.field_title
+    - paragraphs.paragraphs_type.section_news
+  module:
+    - entity_reference_revisions
+id: paragraph.section_news.default
+targetEntityType: paragraph
+bundle: section_news
+mode: default
+content:
+  field_before_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_news_home:
+    type: entity_reference_revisions_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
