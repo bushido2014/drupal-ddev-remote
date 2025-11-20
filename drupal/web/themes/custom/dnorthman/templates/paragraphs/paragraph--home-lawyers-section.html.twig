@@ -1,12 +1,11 @@
-<section class="lawyers-section">
+<section class="home-news">
   <div class="container">
-  <div class="section-title">
-  <h4 class="before-title">{{paragraph.field_before_title.value}}</h4>
-  <h2>{{paragraph.field_title.value}}</h2>
-  </div>
+    <div class="section-title">
+      <h4>{{ paragraph.field_before_title.value }}</h4>
+      <h2>{{ paragraph.field_title.value }}</h2>
+    </div>
 
-
-<div class="home-lawyer-list d-grid">
+    <div class="home-lawyer-list d-grid">
 
 {% for item in paragraph.field_home_field_lawyers %} 
   {% set lawyer = item.entity %}
@@ -23,11 +22,6 @@
         </div>
       {% endfor %}
     </div>
-
-
-
-
+    
   </div>
-  </section>
-
-  
+</section>

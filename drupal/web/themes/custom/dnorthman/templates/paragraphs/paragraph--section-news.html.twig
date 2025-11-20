@@ -1,0 +1,51 @@
+<section class="home-news">
+  <div class="container">
+    <div class="section-title">
+      <h4>{{ paragraph.field_before_title.value }}</h4>
+      <h2>{{ paragraph.field_title.value }}</h2>
+    </div>
+
+    <div class="home-news-list d-grid">
+      {% for item in paragraph.field_news_home %}
+        {% set news = item.entity %}
+
+        {# Pregătire imagine #}
+        {% set image = null %}
+        {% if news.field_image.entity is defined %}
+          {% set media = news.field_image.entity %}
+          {% if media.field_media_image.entity is defined %}
+            {% set image = media.field_media_image.entity %}
+          {% endif %}
+        {% endif %}
+
+        <div class="news-item">
+
+          {# Imagine #}
+          {% if image %}
+            <div class="news-image">
+              <img
+                src="{{ file_url(image.uri.value)|image_style('medium') }}"
+                alt="{{ image.alt|default(news.label) }}"
+                loading="lazy"
+              >
+            </div>
+          {% endif %}
+
+          {# Titlu #}
+          <h3 class="news-title">
+            <a href="{{ path('entity.node.canonical', {'node': news.id}) }}">
+              {{ news.label }}
+            </a>
+          </h3>
+
+          {# Buton #}
+          <div class="see-more">
+            <a href="{{ path('entity.node.canonical', {'node': news.id}) }}" class="btn btn-secondary">
+              See Detail
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
