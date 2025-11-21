@@ -170,3 +170,15 @@ grid-template-columns: repeat(2, 1fr);
 .article-body {
     padding-top: 60px;
 }
+
+
+
+.welcome-wrapp {
+    align-items: end;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.vision-cards {
+    gap:30px;
+}

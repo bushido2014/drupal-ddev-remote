@@ -1,6 +1,7 @@
 <section class="about-welcome">
 <div class="container">
-
+<div class="welcome-wrapp d-flex">
+<div class="welcome-item">
 {% if paragraph.field_image.entity %}
   {% set media = paragraph.field_image.entity %}
   {% if media.field_media_image.entity %}
@@ -10,9 +11,14 @@
     />
   {% endif %}
 {% endif %}
-
- <h4>{{paragraph.field_before_title.value}}</h4>
+</div>
+<div class="welcome-item">
+<h4>{{paragraph.field_before_title.value}}</h4>
   <h2>{{ paragraph.field_title.value }}</h2>
+</div>
+</div>
+ <div class="welcome-desc">
   {{ paragraph.field_description.value|raw }}
+  </div>
 </div>
 </section>

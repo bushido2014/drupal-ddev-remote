@@ -1,0 +1,69 @@
+uuid: ae767ac6-ad4c-4e60-bb65-5db91b2f631b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_about_success.field_before_title
+    - field.field.paragraph.section_about_success.field_description
+    - field.field.paragraph.section_about_success.field_image
+    - field.field.paragraph.section_about_success.field_image_lead
+    - field.field.paragraph.section_about_success.field_name_lead
+    - field.field.paragraph.section_about_success.field_title
+    - paragraphs.paragraphs_type.section_about_success
+  module:
+    - text
+id: paragraph.section_about_success.default
+targetEntityType: paragraph
+bundle: section_about_success
+mode: default
+content:
+  field_before_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_lead:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_name_lead:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

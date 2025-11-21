@@ -1,0 +1,15 @@
+uuid: e0d2a3d4-e5d2-4ae0-a9ef-eb06ac74a69f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: section_vision
+label: 'Section Vision'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

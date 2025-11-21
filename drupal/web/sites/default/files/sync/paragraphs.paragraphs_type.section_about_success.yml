@@ -1,0 +1,10 @@
+uuid: cad2dd02-7892-4492-ab0d-41a823e34840
+langcode: en
+status: true
+dependencies: {  }
+id: section_about_success
+label: 'Section About Success'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

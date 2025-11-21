@@ -1,0 +1,19 @@
+uuid: fe741258-1c6e-4072-8cf0-38ee7e4b9d63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name_lead
+    - paragraphs.paragraphs_type.section_about_success
+id: paragraph.section_about_success.field_name_lead
+field_name: field_name_lead
+entity_type: paragraph
+bundle: section_about_success
+label: 'Name Lead'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

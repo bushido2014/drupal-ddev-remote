@@ -1,0 +1,19 @@
+uuid: 100d80fc-edf6-4c21-a264-2470648f166c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.section_about_success
+id: paragraph.section_about_success.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: section_about_success
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

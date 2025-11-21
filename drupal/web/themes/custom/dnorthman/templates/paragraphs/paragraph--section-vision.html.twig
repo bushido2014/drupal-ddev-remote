@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Paragraph template: section.vision
+ */
+#}
+<section{{ attributes.addClass('vision') }}>
+    <div class="container">
+       
+        {% if paragraph.field_vision_cards is not empty %}
+            <div class="vision-cards d-flex">
+                {% for item in paragraph.field_vision_cards %}
+                    {% set card = item.entity %}
+                    {% if card is not empty %}
+                        <div class="vision-card">
+                            {% if card.field_title.value %}
+                                <h2 class="vision-card-title">{{ card.field_title.value }}</h3>
+                            {% endif %}
+                            {% if card.field_description.value %}
+                                <div class="vision-card-desc">{{ card.field_description.value|raw }}</div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+       
+    </div>
+</section>
