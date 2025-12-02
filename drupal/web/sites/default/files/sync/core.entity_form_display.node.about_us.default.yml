@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.about_us.field_our_partnership_section
     - field.field.node.about_us.field_section_about_welcome
     - field.field.node.about_us.field_section_vision
+    - field.field.node.about_us.field_testimonials
     - node.type.about_us
   module:
     - entity_reference_revisions
@@ -111,6 +112,16 @@ content:
         collapse_edit_all: collapse_edit_all
         convert: '0'
         duplicate: duplicate
+    third_party_settings: {  }
+  field_testimonials:
+    type: entity_reference_revisions_autocomplete
+    weight: 30
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path
