@@ -2,7 +2,7 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.bg-page-title {
+/* .bg-page-title {
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -13,7 +13,56 @@
   align-items: center;
   align-content: flex-start;
   min-height: 260px;
+} */
+
+.bg-page-title {
+  position: relative;
+  min-height: 290px;
+  background: url('../../img/bg-title.png') center/cover no-repeat;
+  display: flex;                    /* MUTAT AICI – flex pe secțiunea mare */
+  align-items: center;              /* AICI se face centrarea verticală */
 }
+
+.bg-page-title::before {
+  content: '';
+  position: absolute;
+  inset: 0;                         /* shorthand pentru top/right/bottom/left: 0 */
+  background: rgba(30, 46, 69, 0.65);
+  z-index: 1;
+}
+
+.bg-page-title .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.page-title-inner {
+  /* nu mai are nevoie de flex aici */
+}
+
+.page-title,
+.page-title h1 {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .bg-page-title { min-height: 240px; }
+  .page-title, .page-title h1 { font-size: 42px; }
+}
+
+@media (max-width: 576px) {
+  .bg-page-title { min-height: 200px; }
+  .page-title, .page-title h1 { font-size: 36px; }
+}
+
+
 
 .page--user-login .bg-page-title .page-title-wrapp {
   padding-top: 0;

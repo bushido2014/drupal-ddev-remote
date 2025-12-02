@@ -1,6 +1,6 @@
 uuid: a2aaa380-ae22-492c-a698-0de2bb6cf127
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
 id: dnorthman_page_title
 theme: dnorthman
-region: content
+region: heading
 weight: -6
 provider: null
 plugin: page_title_block

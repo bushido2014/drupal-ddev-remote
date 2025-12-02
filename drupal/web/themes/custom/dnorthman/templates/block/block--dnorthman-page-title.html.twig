@@ -1,7 +1,16 @@
-<section class="bg-page-title" style="background-image: url('{{ directory }}/img/bg-title.png');">
+{#<section class="bg-page-title" style="background-image: url('{{ directory }}/img/bg-title.png');">
 <div class="container">
 <div class="page-title-wrapp d-flex">
 {{ content }}
 </div>
 </div>
+</section>
+#}
+
+<section class="bg-page-title">
+  <div class="container">
+    <div class="page-title-inner">
+      {{ content }}
+    </div>
+  </div>
 </section>

@@ -1,16 +1,33 @@
- <section class="bg-page-title" style="background-image: url('{{ base_path ~ directory }}/img/bg-title.png');">
+  {#<section class="bg-page-title" style="background-image: url('{{ base_path ~ directory }}/img/bg-title.png');">
     <div class="container d-flex">
       <h1 class="page-title">Services</h1>
       </div>
-  </section>
+  </section>#}
+
+{{ drupal_entity('paragraph', 3) }}
+  
 <section class="services">
 <div class="container">
 <ul class="services-list d-grid">
+  {#
   {% for row in rows %}
     <li class="service-item">
       {{ row.content }}
     </li>
   {% endfor %}
+#}
+{% for row in rows %}
+    {% set node = row.content['#row']._entity %}
+    <li class="service-item d-flex">
+      <a href="{{ path('entity.node.canonical', {'node': node.id}) }}" class="service-item__link">
+        {{ node.getTitle }}
+      </a>
+      <span class="service-icon-arrow">
+        <i class="fa-solid fa-arrow-right fa-2x"></i>
+      </span>
+    </li>
+  {% endfor %}
+
 </ul>
 </div>
 </section>

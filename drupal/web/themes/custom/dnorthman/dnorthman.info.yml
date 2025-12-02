@@ -14,7 +14,7 @@ components:
 regions:
   header: 'Header'
   primary_menu: 'Primary menu'
-  services_header: 'Services Header'
+  heading: 'Page Heading'
   content: 'Content'
   homearticle: 'Home Article'
   footer: 'Footer'
