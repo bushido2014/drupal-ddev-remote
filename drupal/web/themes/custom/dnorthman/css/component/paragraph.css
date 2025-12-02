@@ -53,6 +53,11 @@ grid-template-columns: repeat(2, 1fr);
     top: 16px;
 }
 
+.legal-attorney-list {
+    margin-top: 35px;
+    border-top: 1px solid #000;
+}
+
 .legal-attorney-list ul {
     margin-top: 30px;
 }
@@ -66,6 +71,10 @@ grid-template-columns: repeat(2, 1fr);
 }
 .legal-attorney-list .icon .fa-circle-check {
     color: var(--color-primary);
+}
+
+.legal-attorney-item.desc {
+    padding: 0 30px;
 }
 
 /* .services-list ul li::after {
@@ -181,4 +190,11 @@ grid-template-columns: repeat(2, 1fr);
 
 .vision-cards {
     gap:30px;
+}
+
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
