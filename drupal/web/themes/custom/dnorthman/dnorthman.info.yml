@@ -15,6 +15,8 @@ regions:
   header: 'Header'
   primary_menu: 'Primary menu'
   heading: 'Page Heading'
+  content_top: 'Content Top'
   content: 'Content'
+  content_bottom: 'Content Bottom'
   homearticle: 'Home Article'
   footer: 'Footer'

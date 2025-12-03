@@ -23,12 +23,17 @@
   </div>
 {% endif %}
 
+  {% if page.content_top %}
+      {{ page.content_top }}
+    {% endif %}
 
  {% block content %}
       {{ page.content }}
     {% endblock %}
 
-    
+  {% if page.content_bottom %}
+      {{ page.content_bottom }}
+    {% endif %}
    
       
     

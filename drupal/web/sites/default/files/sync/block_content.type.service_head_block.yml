@@ -1,0 +1,8 @@
+uuid: d986bdde-14a9-4fde-b854-2b1680a8f27b
+langcode: en
+status: true
+dependencies: {  }
+id: service_head_block
+label: 'Service Head Block'
+revision: false
+description: null

@@ -1,0 +1,24 @@
+uuid: acae9459-ff2c-4317-aaba-22cafc460c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.service_head_block
+    - field.field.block_content.service_head_block.field_services_heading
+  module:
+    - entity_reference_revisions
+id: block_content.service_head_block.default
+targetEntityType: block_content
+bundle: service_head_block
+mode: default
+content:
+  field_services_heading:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

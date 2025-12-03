@@ -1,0 +1,28 @@
+uuid: 5b6d8dad-a767-4fd7-a4d4-e801e9a22a0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.service_head_block
+    - field.storage.block_content.field_services_heading
+  module:
+    - entity_reference_revisions
+id: block_content.service_head_block.field_services_heading
+field_name: field_services_heading
+entity_type: block_content
+bundle: service_head_block
+label: 'Services Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraphs_library_item'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference_revisions
