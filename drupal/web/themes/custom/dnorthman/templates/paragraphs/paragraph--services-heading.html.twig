@@ -1,49 +1,25 @@
-{#
-/**
- * @file
- * Template pentru Paragraph Library Reference
- * Accesează și renderează paragraph-ul referențiat
- */
-#}
+<section class="services-heading">
+<div class="container">
+<div class="heading-wrapp">
 
-{% if paragraph.field_library_item.0 %}
-  {% set referenced_para = paragraph.field_library_item.0.entity %}
-  
-  {# Verifică dacă e services_heading #}
-  {% if referenced_para.bundle == 'services_heading' %}
-    
-    <div class="services-heading">
-      <div class="services-heading__content">
-        
-        {# TITLE #}
-        {% if referenced_para.field_title.0.value %}
-          <h2 class="services-heading__title">
-            {{ referenced_para.field_title.0.value }}
-          </h2>
+
+<div class="heading-image">
+ {% if paragraph.field_image.entity %}
+          {% set media = paragraph.field_image.entity %}
+          {% if media.field_media_image.entity %}
+            <img
+              src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+              alt="{{ media.field_media_image.alt }}"
+              loading="lazy"
+            />
+          {% endif %}
         {% endif %}
-        
-        {# IMAGE #}
-        {% if referenced_para.field_image.0 %}
-          <div class="services-heading__image">
-            {% set media = referenced_para.field_image.0.entity %}
-            
-            {% if media and media.field_media_image.0 %}
-              {% set image = media.field_media_image.0.entity %}
-              
-              <img 
-                src="{{ file_url(image.uri.value) }}"
-                alt="{{ image.alt }}"
-                loading="lazy"
-                class="services-heading__img"
-              />
-            {% endif %}
-          </div>
-        {% endif %}
-        
-      </div>
+</div>
+    <div class="heading-title">
+        <h2>{{ paragraph.field_title.value }}</h2>
     </div>
-    
-  {% endif %}
-  
-{% endif %}
 
+
+     </div>
+    </div>
+</section>
