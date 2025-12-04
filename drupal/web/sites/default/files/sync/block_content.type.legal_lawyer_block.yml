@@ -1,0 +1,8 @@
+uuid: 784e4bcf-45ac-4598-b89a-396d01dec0e0
+langcode: en
+status: true
+dependencies: {  }
+id: legal_lawyer_block
+label: 'Legal Lawyer Block'
+revision: false
+description: null

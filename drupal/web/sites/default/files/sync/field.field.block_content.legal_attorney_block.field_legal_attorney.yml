@@ -1,0 +1,91 @@
+uuid: 7591e1ee-91ea-4140-b53d-78212e8ad8c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.legal_attorney_block
+    - field.storage.block_content.field_legal_attorney
+    - paragraphs.paragraphs_type.legal_attorney
+  module:
+    - entity_reference_revisions
+id: block_content.legal_attorney_block.field_legal_attorney
+field_name: field_legal_attorney
+entity_type: block_content
+bundle: legal_attorney_block
+label: 'Legal Attorney'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      legal_attorney: legal_attorney
+    negate: 0
+    target_bundles_drag_drop:
+      about_welcome:
+        weight: 22
+        enabled: false
+      article_reference:
+        weight: 23
+        enabled: false
+      home_article_about:
+        weight: 24
+        enabled: false
+      home_cases_section:
+        weight: 25
+        enabled: false
+      home_hero_section:
+        weight: 26
+        enabled: false
+      home_lawyers_section:
+        weight: 27
+        enabled: false
+      home_services:
+        weight: 28
+        enabled: false
+      lawyer_stats:
+        weight: 29
+        enabled: false
+      legal_attorney:
+        weight: 30
+        enabled: true
+      library_reference:
+        weight: 31
+        enabled: false
+      link:
+        weight: 32
+        enabled: false
+      link_secondary:
+        weight: 33
+        enabled: false
+      section_about_legal:
+        weight: 34
+        enabled: false
+      section_about_success:
+        weight: 35
+        enabled: false
+      section_legal_lawyer:
+        weight: 36
+        enabled: false
+      section_news:
+        weight: 37
+        enabled: false
+      section_partnership:
+        weight: 38
+        enabled: false
+      section_vision:
+        weight: 39
+        enabled: false
+      services_heading:
+        weight: 40
+        enabled: false
+      testimonials:
+        weight: 41
+        enabled: false
+      vision_cards:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

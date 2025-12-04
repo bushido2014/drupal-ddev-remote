@@ -1,0 +1,24 @@
+uuid: 4fe07c03-6c1c-42fe-a671-8c0448c473f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.legal_attorney_block
+    - field.field.block_content.legal_attorney_block.field_legal_attorney
+  module:
+    - entity_reference_revisions
+id: block_content.legal_attorney_block.default
+targetEntityType: block_content
+bundle: legal_attorney_block
+mode: default
+content:
+  field_legal_attorney:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

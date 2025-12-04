@@ -1,0 +1,33 @@
+uuid: 52a5d223-d3b7-41a8-95a3-3db59e773841
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.legal_attorney_block
+    - field.field.block_content.legal_attorney_block.field_legal_attorney
+  module:
+    - entity_reference_revisions
+id: block_content.legal_attorney_block.default
+targetEntityType: block_content
+bundle: legal_attorney_block
+mode: default
+content:
+  field_legal_attorney:
+    type: entity_reference_revisions_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

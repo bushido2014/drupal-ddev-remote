@@ -1,0 +1,30 @@
+uuid: d764eb65-5a7f-4308-ae71-13c256989062
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:testimonials_block:88482d0a-4876-49c3-8cbc-d546a77c544e'
+  module:
+    - block_content
+    - system
+  theme:
+    - dnorthman
+id: dnorthman_testimonialblockslider
+theme: dnorthman
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:88482d0a-4876-49c3-8cbc-d546a77c544e'
+settings:
+  id: 'block_content:88482d0a-4876-49c3-8cbc-d546a77c544e'
+  label: 'Testimonial Block Slider'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /services

@@ -1,0 +1,30 @@
+uuid: 71484edf-f445-4232-9568-561f99df6177
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:legal_lawyer_block:59a1ab33-fc6e-4f65-aadb-e32c3f3bdccc'
+  module:
+    - block_content
+    - system
+  theme:
+    - dnorthman
+id: dnorthman_legallawyersectionblock
+theme: dnorthman
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:59a1ab33-fc6e-4f65-aadb-e32c3f3bdccc'
+settings:
+  id: 'block_content:59a1ab33-fc6e-4f65-aadb-e32c3f3bdccc'
+  label: 'Legal Lawyer Section Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /services

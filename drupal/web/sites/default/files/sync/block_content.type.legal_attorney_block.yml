@@ -1,0 +1,8 @@
+uuid: 31dca4f1-27a3-4952-8634-4b3f475dc7ef
+langcode: en
+status: true
+dependencies: {  }
+id: legal_attorney_block
+label: 'Legal Attorney Block'
+revision: false
+description: null
