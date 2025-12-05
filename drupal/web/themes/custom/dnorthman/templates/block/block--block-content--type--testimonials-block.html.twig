@@ -1,0 +1,15 @@
+<div {{ attributes.addClass('testimonials-block-wrapper') }}>
+{{content.field_testimonials}}
+</div>
+<script>
+(function() {
+  // Reinitialize slider dacă e în admin
+  if (document.body.classList.contains('admin-theme')) {
+    setTimeout(function() {
+      if (window.sliderLibrary) {
+        window.sliderLibrary.init();
+      }
+    }, 500);
+  }
+})();
+</script>
