@@ -1,0 +1,8 @@
+uuid: c278f08f-e28d-4224-858f-9d973bf127d6
+langcode: en
+status: true
+dependencies: {  }
+id: proffesional_lawyers_block
+label: 'Proffesional Lawyers Block'
+revision: false
+description: null

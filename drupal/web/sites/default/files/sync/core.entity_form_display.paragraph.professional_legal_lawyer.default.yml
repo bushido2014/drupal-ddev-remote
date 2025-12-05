@@ -1,0 +1,46 @@
+uuid: 7df189d6-3ed1-4e4b-982c-8527e452d52e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.professional_legal_lawyer.field_legal_lawyer_list
+    - field.field.paragraph.professional_legal_lawyer.field_link_simple
+    - field.field.paragraph.professional_legal_lawyer.field_title
+    - paragraphs.paragraphs_type.professional_legal_lawyer
+  module:
+    - entity_reference_revisions
+    - link
+id: paragraph.professional_legal_lawyer.default
+targetEntityType: paragraph
+bundle: professional_legal_lawyer
+mode: default
+content:
+  field_legal_lawyer_list:
+    type: entity_reference_revisions_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link_simple:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

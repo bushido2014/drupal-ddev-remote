@@ -1,0 +1,33 @@
+<section class="proffi-lawyer">
+  <div class="container">
+    <div class="proffi-lawyer-wrapp d-flex">
+    <h2>{{ paragraph.field_title.value }}</h2>
+    {{ content.field_link_simple }}
+    </div>
+
+<div class="service-lawyer-list d-grid">
+
+{% for item in paragraph.field_legal_lawyer_list %} 
+  {% set lawyer = item.entity %}
+        <div class="lawyer-item">
+     {% if lawyer.field_image_lawyer is not empty %}
+  <div class="lawyer-image">
+    <img src="{{ lawyer.field_image_lawyer|file_url }}" alt="{{ lawyer.field_image_lawyer.alt }}">
+  </div>
+{% endif %}
+          <div class="lawyer-name">{{ lawyer.label }}</div>
+          <div class="lawyer-occupation">
+            {{ lawyer.field_occupation.value }}
+          </div>
+        </div>
+      {% endfor %}
+      
+    </div>
+
+
+
+
+
+
+  </div>
+  </section>

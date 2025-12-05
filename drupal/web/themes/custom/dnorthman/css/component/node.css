@@ -66,3 +66,19 @@
 .services-node {
   padding:25px 0;
 }
+
+.proffi-lawyer-wrapp {
+  justify-content: space-between;
+}
+
+.proffi-lawyer-wrapp .link-simple-wrapper {
+  margin: initial;
+}
+
+.proffi-lawyer-wrapp {
+  margin-bottom: 30px;
+}
+
+.service-lawyer-list {
+  grid-template-columns: repeat(3, 1fr);
+}

@@ -12,7 +12,7 @@ dependencies:
 id: dnorthman_legalattorneysectionblock
 theme: dnorthman
 region: content_bottom
-weight: 0
+weight: -7
 provider: null
 plugin: 'block_content:f6712d22-9b21-4602-ac96-451945ae5a80'
 settings:

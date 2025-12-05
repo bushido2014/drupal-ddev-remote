@@ -12,7 +12,7 @@ dependencies:
 id: dnorthman_legallawyersectionblock
 theme: dnorthman
 region: content_bottom
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:59a1ab33-fc6e-4f65-aadb-e32c3f3bdccc'
 settings:
@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /services
+    pages: "/services\r\n/services/*"

@@ -1,0 +1,23 @@
+uuid: 21688ac6-4a96-4905-9c6f-bc16b008c6a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_simple
+    - paragraphs.paragraphs_type.professional_legal_lawyer
+  module:
+    - link
+id: paragraph.professional_legal_lawyer.field_link_simple
+field_name: field_link_simple
+entity_type: paragraph
+bundle: professional_legal_lawyer
+label: 'Link simple'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

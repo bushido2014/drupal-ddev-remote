@@ -1,0 +1,10 @@
+uuid: 15a22f17-5705-4553-87f4-fa6b549a5681
+langcode: en
+status: true
+dependencies: {  }
+id: professional_legal_lawyer
+label: 'Professional Legal Lawyer'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

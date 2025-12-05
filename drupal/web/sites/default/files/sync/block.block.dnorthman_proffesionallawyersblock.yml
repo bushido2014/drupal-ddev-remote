@@ -1,0 +1,30 @@
+uuid: be9db565-0d5e-4eeb-b918-33c86b9f971d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:proffesional_lawyers_block:cedfd2a2-1fd4-43d3-a5fc-9dc5e0e30585'
+  module:
+    - block_content
+    - system
+  theme:
+    - dnorthman
+id: dnorthman_proffesionallawyersblock
+theme: dnorthman
+region: content_bottom
+weight: -8
+provider: null
+plugin: 'block_content:cedfd2a2-1fd4-43d3-a5fc-9dc5e0e30585'
+settings:
+  id: 'block_content:cedfd2a2-1fd4-43d3-a5fc-9dc5e0e30585'
+  label: 'Proffesional Lawyers Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/services/*'

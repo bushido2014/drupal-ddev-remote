@@ -1,0 +1,24 @@
+uuid: b9db34fa-c2f6-40b6-8a56-4e82caa8036a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.proffesional_lawyers_block
+    - field.field.block_content.proffesional_lawyers_block.field_proffesional_lawyers
+  module:
+    - entity_reference_revisions
+id: block_content.proffesional_lawyers_block.default
+targetEntityType: block_content
+bundle: proffesional_lawyers_block
+mode: default
+content:
+  field_proffesional_lawyers:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

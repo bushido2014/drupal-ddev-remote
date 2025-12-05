@@ -12,7 +12,7 @@ dependencies:
 id: dnorthman_testimonialblockslider
 theme: dnorthman
 region: content_bottom
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:88482d0a-4876-49c3-8cbc-d546a77c544e'
 settings:
@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /services
+    pages: "/services\r\n/services/*"
