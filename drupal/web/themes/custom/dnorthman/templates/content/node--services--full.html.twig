@@ -1,13 +1,17 @@
 <article{{ attributes.addClass('services-node') }}>
-  
   <div class="container">
 
-     <div class="article-img">
-     {{content.field_image_service}}
-     </div>
-    {{ content.field_service_description }}
-    {{content.field_service_price}}
-    {{content.field_service_link}}
-
+   
+    <div class="article-img">
+      {{ content.field_image_service}}
     </div>
+
+    {# Restul conținutului #}
+    <div class="service-content">
+      {{ content.field_service_description }}
+      {{ content.field_service_price }}
+      {{ content.field_service_link }}
+    </div>
+
+  </div>
 </article>

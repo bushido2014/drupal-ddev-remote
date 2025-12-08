@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/services\r\n/services/*"
+    pages: "/services\r\n/services/*\r\n/cases"

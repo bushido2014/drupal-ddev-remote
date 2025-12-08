@@ -1,0 +1,30 @@
+uuid: 8d6e9659-737b-4b29-b62a-b82890ac4c77
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f71674ef-e5dc-4b8d-ae0b-8cd3ccea3236'
+  module:
+    - block_content
+    - system
+  theme:
+    - dnorthman
+id: dnorthman_casesheader
+theme: dnorthman
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:f71674ef-e5dc-4b8d-ae0b-8cd3ccea3236'
+settings:
+  id: 'block_content:f71674ef-e5dc-4b8d-ae0b-8cd3ccea3236'
+  label: 'Cases Header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /cases
