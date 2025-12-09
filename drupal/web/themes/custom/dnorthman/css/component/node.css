@@ -100,3 +100,13 @@
   display: block;
 }
 
+.case-main-image img {
+    width: 70% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 520px !important;     /* înălțimea maximă dorită */
+    object-fit: cover;                /* taie frumos dacă e prea înaltă */
+    object-position: center top;      /* păstrează capul/clientul în cadru */
+    display: block;
+    
+}
