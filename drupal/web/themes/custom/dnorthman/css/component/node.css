@@ -110,3 +110,8 @@
     display: block;
     
 }
+
+.attorney-cases-wrapp {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0;
+}

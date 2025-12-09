@@ -1,8 +1,0 @@
-uuid: 5f3e0818-6cc4-4395-ae68-734a50b9fd2c
-langcode: en
-status: true
-dependencies: {  }
-id: cases_lawyer
-label: 'Cases Lawyer'
-revision: false
-description: null

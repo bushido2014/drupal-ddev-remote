@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.cases.body
+    - field.field.node.cases.field_attorney
     - field.field.node.cases.field_client_name
     - field.field.node.cases.field_client_occupation
     - field.field.node.cases.field_image_cases
@@ -32,6 +33,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_attorney: true
   field_client_name: true
   field_client_occupation: true
   field_image_cases: true

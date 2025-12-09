@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.cases.body
+    - field.field.node.cases.field_attorney
     - field.field.node.cases.field_client_name
     - field.field.node.cases.field_client_occupation
     - field.field.node.cases.field_image_cases
@@ -33,6 +34,16 @@ content:
     weight: 4
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_attorney:
+    type: entity_reference_autocomplete
+    weight: 29
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_client_name:
     type: string_textfield
