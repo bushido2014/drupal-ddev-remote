@@ -17,23 +17,3 @@
 </div>
 
 </section>
-<section class="lawyer"> 
-
- <div class="container">
-    <div class="lawyer-list d-grid test">
-      {% for row in rows %}
-        <div class="lawyer-item">
-          <div class="lawyer-image">
-            {{ row.content.field_image }}
-          </div>
-          <div class="lawyer-name">
-            {{ row.content.title }}
-          </div>
-          <div class="lawyer-occupation">
-            {{ row.content.field_occupation }}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
