@@ -1,0 +1,31 @@
+/* Layout - cu clase dinamice */
+
+.page.no-sidebar .page-content {
+  width: 100%;
+}
+
+.page.has-sidebar.layout-70-30 .page-content {
+  width: 70%;
+}
+
+.page.has-sidebar .sidebar-second {
+  width: 30%;
+  padding: 20px;
+  
+}
+
+.page {
+  display: flex;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    flex-direction: column;
+  }
+  
+  .page .page-content,
+  .page .sidebar-second {
+    width: 100%;
+  }
+}

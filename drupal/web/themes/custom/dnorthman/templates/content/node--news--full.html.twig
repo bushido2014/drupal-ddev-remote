@@ -1,25 +1,5 @@
 <article{{ attributes.addClass('news-node') }}>
-  <div class="container">
-    <div class="news-full-wrapper">
-      
-      {# MAIN CONTENT - LEFT #}
-      <main class="news-main-content">
-        {{ content }}
-      </main>
 
-      {# SIDEBAR - RIGHT (doar dacă există conținut) #}
-      {% if page.sidebar_second %}
-        <aside class="news-sidebar">
-          
-          {# Latest Articles Block #}
-          <div class="sidebar-block">
-           
-            {{ page.sidebar_second }}
-          </div>
-
-        </aside>
-      {% endif %}
-
-    </div>
-  </div>
+        {{ content}}
+       
 </article>

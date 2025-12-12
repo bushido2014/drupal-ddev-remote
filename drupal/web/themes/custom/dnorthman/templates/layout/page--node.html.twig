@@ -1,0 +1,65 @@
+{# /**
+ * @file
+ * Theme override to display a single Drupal page.
+ */ #}
+
+{% set has_sidebar = page.sidebar_second is not empty %}
+
+{# Classes dinamice #}
+{% set page_classes = [
+  'page',
+  node ? 'page-type--' ~ node.getType()|clean_class,
+  has_sidebar ? 'has-sidebar' : 'no-sidebar',
+  has_sidebar ? 'layout-70-30' : 'layout-full',
+] %}
+
+
+
+{{ include('@dnorthman/layout/header.html.twig') }}
+
+{% if page.heading %}
+  <div class="heading-region">
+    {{ page.heading }}
+  </div>
+{% endif %}
+
+{% if page.content_top %}
+  {{ page.content_top }}
+{% endif %}
+
+<div class="container">
+
+  <div{{ attributes.addClass(page_classes) }}>
+
+  <div class="page-content">
+    {% if page.content %}
+      {{ page.content }}
+    {% endif %}
+  </div>
+
+
+  {% if page.sidebar_second %}
+    <aside class="sidebar-second">
+      {{ page.sidebar_second }}
+    </aside>
+  {% endif %}
+
+ </div>
+
+</div>
+
+{% if page.content_bottom %}
+  {{ page.content_bottom }}
+{% endif %}
+
+{% if page.homearticle %}
+  <div class="home-article-region">
+    {{ page.homearticle }}
+  </div>
+{% endif %}
+
+{% if page.footer %}
+  <footer role="contentinfo">
+    {{ page.footer }}
+  </footer>
+{% endif %}
