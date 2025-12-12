@@ -4,6 +4,7 @@ global:
     base:
       css/base/main.css: {}
     component:
+      css/component/page.css: {}
       css/component/block.css: {}
       css/component/breadcrumb.css: {}
       css/component/field.css: {}

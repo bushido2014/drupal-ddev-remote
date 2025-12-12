@@ -1,14 +1,6 @@
 {# /**
  * @file
  * Theme override to display a single Drupal page.
- *
- * Available variables:
- * - page: The rendered elements of the page.
- * - page.header: Items for the header region.
- * - page.content: The main content of the page.
- * - page.sidebar_first: Items for the first sidebar.
- * - page.sidebar_second: Items for the second sidebar.
- * - page.footer: Items for the footer region.
  */ #}
 
 {{ include('@dnorthman/layout/header.html.twig') }}
@@ -23,15 +15,24 @@
   {{ page.content_top }}
 {% endif %}
 
-{% if page.content %}
-  {{ page.content }}
-{% endif %}
+{# Main Content Wrapper - responsive layout #}
+<div class="container page-wrapper">
+  
+  {# CONTENT - 70% cu sidebar, 100% fără #}
+  <main class="page-content">
+    {% if page.content %}
+      {{ page.content }}
+    {% endif %}
+  </main>
 
-{% if page.sidebar_second %}
-  <aside class="sidebar-second">
-    {{ page.sidebar_second }}
-  </aside>
-{% endif %}
+  {# SIDEBAR - doar dacă există #}
+  {% if page.sidebar_second %}
+    <aside class="sidebar-second">
+      {{ page.sidebar_second }}
+    </aside>
+  {% endif %}
+
+</div>
 
 {% if page.content_bottom %}
   {{ page.content_bottom }}
