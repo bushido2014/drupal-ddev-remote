@@ -177,6 +177,9 @@ grid-template-columns: repeat(2, 1fr);
     gap:30px;
 }
 
+.home-services__wrapp .services-content .services-list {
+    grid-template-columns: 1fr;
+}
 
 .services-list {
   display: grid;

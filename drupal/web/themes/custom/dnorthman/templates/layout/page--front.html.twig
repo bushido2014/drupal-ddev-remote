@@ -1,0 +1,50 @@
+{# /**
+ * @file
+ * Theme override to display a single Drupal page.
+ *
+ * Available variables:
+ * - page: The rendered elements of the page.
+ * - page.header: Items for the header region.
+ * - page.content: The main content of the page.
+ * - page.sidebar_first: Items for the first sidebar.
+ * - page.sidebar_second: Items for the second sidebar.
+ * - page.footer: Items for the footer region.
+ */ #}
+
+{{ include('@dnorthman/layout/header.html.twig') }}
+
+{% if page.heading %}
+  <div class="heading-region">
+    {{ page.heading }}
+  </div>
+{% endif %}
+
+{% if page.content_top %}
+  {{ page.content_top }}
+{% endif %}
+
+{% if page.content %}
+  {{ page.content }}
+{% endif %}
+
+{% if page.sidebar_second %}
+  <aside class="sidebar-second">
+    {{ page.sidebar_second }}
+  </aside>
+{% endif %}
+
+{% if page.content_bottom %}
+  {{ page.content_bottom }}
+{% endif %}
+
+{% if page.homearticle %}
+  <div class="home-article-region">
+    {{ page.homearticle }}
+  </div>
+{% endif %}
+
+{% if page.footer %}
+  <footer role="contentinfo">
+    {{ page.footer }}
+  </footer>
+{% endif %}
