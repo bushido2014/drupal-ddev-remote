@@ -20,8 +20,15 @@ elements: |-
     '#placeholder': 'Enter Your Name'
     '#required': true
     '#required_error': 'Name Required'
+    '#wrapper_attributes':
+      class:
+        - form-control
     '#attributes':
-      style: form-input
+      class:
+        - form-input
+    '#label_attributes':
+      class:
+        - form-label
   your_email:
     '#type': email
     '#title': 'Your Email'
@@ -29,6 +36,14 @@ elements: |-
     '#placeholder': 'Enter Your Email'
     '#required': true
     '#required_error': 'Email Required'
+    '#wrapper_attributes':
+      class:
+        - form-control
+    '#attributes':
+      style: form-input
+    '#label_attributes':
+      class:
+        - form-label
   your_phone:
     '#type': textfield
     '#title': 'Your Phone'
@@ -47,11 +62,25 @@ elements: |-
     '#empty_option': 'Choose Services'
     '#required': true
     '#required_error': 'Services Required'
+    '#wrapper_attributes':
+      class:
+        - form-control
+    '#attributes':
+      style: form-input
+    '#label_attributes':
+      class:
+        - form-label
   date:
     '#type': date
     '#title': Date
     '#required': true
     '#required_error': 'Date Required'
+    '#wrapper_attributes':
+      class:
+        - form-control
+    '#label_attributes':
+      class:
+        - form-label
     '#date_days':
       - '1'
       - '2'
@@ -71,11 +100,30 @@ elements: |-
     '#empty_option': 'Choose Time'
     '#required': true
     '#required_error': 'Time Required'
+    '#label_attributes':
+      class:
+        - form-label
   message:
     '#type': textarea
     '#title': Message
     '#title_display': before
     '#placeholder': 'Enter Your Message'
+    '#wrapper_attributes':
+      class:
+        - form-control
+    '#attributes':
+      class:
+        - form-input
+    '#label_attributes':
+      class:
+        - form-label
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__attributes':
+      class:
+        - btn
+        - btn-primary
 css: ''
 javascript: ''
 settings:
