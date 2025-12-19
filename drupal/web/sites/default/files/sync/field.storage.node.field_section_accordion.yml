@@ -1,0 +1,21 @@
+uuid: bb459163-9ea0-4a3c-bbef-ce7a52c4a2c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_section_accordion
+field_name: field_section_accordion
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

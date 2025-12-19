@@ -201,5 +201,44 @@ grid-template-columns: repeat(2, 1fr);
 }
 
 
+.accordion {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
+.accordion-button {
+  padding: 18px 20px;
+  background: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+  background: #f8f9fa;
+}
+
+.accordion-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.accordion-button:not(.collapsed) .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  padding: 20px;
+  color: #666;
+  line-height: 1.6;
+}
 
