@@ -1,0 +1,22 @@
+uuid: 9b0633d4-6b60-42fe-8b99-3436aa5b3ec9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lawyer
+id: node.lawyer.promote
+field_name: promote
+entity_type: node
+bundle: lawyer
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
