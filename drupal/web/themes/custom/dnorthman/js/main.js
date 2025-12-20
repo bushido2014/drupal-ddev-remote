@@ -16,23 +16,21 @@
 
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-  const accordion = document.getElementById('faqAccordion');
-  if (!accordion) return;
-
-  const buttons = accordion.querySelectorAll('.accordion-button');
+ document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('[data-accordion-toggle]');
 
   buttons.forEach(button => {
     button.addEventListener('click', function() {
-      const targetId = this.dataset.accordionTarget;
-      const body = accordion.querySelector('#' + targetId);
+      const body = this.nextElementSibling;
       const isActive = this.classList.contains('active');
 
-      // Close all
-      buttons.forEach(btn => btn.classList.remove('active'));
-      accordion.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('show'));
+      // Close ALL buttons
+      buttons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.nextElementSibling.classList.remove('show');
+      });
 
-      // Open clicked
+      // Open clicked if not active
       if (!isActive) {
         this.classList.add('active');
         body.classList.add('show');

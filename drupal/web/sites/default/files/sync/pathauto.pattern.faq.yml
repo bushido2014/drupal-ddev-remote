@@ -9,10 +9,10 @@ label: Faq
 type: 'canonical_entities:node'
 pattern: 'faq/[node:title]'
 selection_criteria:
-  d07fa76c-3034-4354-873a-735ec0ff4838:
+  0fc6cd0b-f87b-43ef-80ef-5be36fc6f177:
     id: 'entity_bundle:node'
     negate: false
-    uuid: d07fa76c-3034-4354-873a-735ec0ff4838
+    uuid: 0fc6cd0b-f87b-43ef-80ef-5be36fc6f177
     context_mapping:
       node: node
     bundles:

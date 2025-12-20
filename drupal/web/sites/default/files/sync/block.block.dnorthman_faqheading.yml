@@ -1,0 +1,28 @@
+uuid: d34f4013-f54f-4e73-be20-515459f10b78
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e61f38bd-0347-4400-8e66-77bd2b1a6b8d'
+  module:
+    - block_content
+    - system
+  theme:
+    - dnorthman
+id: dnorthman_faqheading
+theme: dnorthman
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:e61f38bd-0347-4400-8e66-77bd2b1a6b8d'
+settings:
+  id: 'block_content:e61f38bd-0347-4400-8e66-77bd2b1a6b8d'
+  label: 'Faq Heading'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /faq

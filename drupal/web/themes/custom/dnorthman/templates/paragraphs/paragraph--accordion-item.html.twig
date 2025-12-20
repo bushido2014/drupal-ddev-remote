@@ -1,0 +1,21 @@
+{# themes/tema_ta/templates/paragraph/paragraph--accordion-item.html.twig #}
+<div class="container">
+<div class="accordion" id="faqAccordion">
+<div class="accordion-item">
+  <button 
+    class="accordion-button" 
+    type="button" 
+    data-accordion-toggle
+  >
+    <span class="accordion-button-title">
+      {{ paragraph.field_title.value }}
+    </span>
+    <i class="fas fa-chevron-down accordion-icon"></i>
+  </button>
+  <div class="accordion-body">
+    {{ paragraph.field_description.value | raw }}
+  </div>
+</div>
+
+</div>
+</div>
