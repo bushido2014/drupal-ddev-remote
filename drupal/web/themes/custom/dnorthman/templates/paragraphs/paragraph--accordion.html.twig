@@ -1,0 +1,23 @@
+<div class="accordion" id="faqAccordion">
+    {% for item in paragraph.field_accordion_items %}
+      {% set item_entity = item.entity %}
+      {% set item_id = 'item' ~ loop.index %}
+      
+      <div class="accordion-item">
+        <button 
+          class="accordion-button {% if loop.first %}active{% endif %}" 
+          type="button" 
+          data-accordion-target="{{ item_id }}"
+        >
+          <span class="accordion-button-title">{{ item_entity.field_title.value }}</span>
+          <i class="fas fa-chevron-down accordion-icon"></i>
+        </button>
+        <div 
+          class="accordion-body {% if loop.first %}show{% endif %}" 
+          id="{{ item_id }}"
+        >
+          {{ item_entity.field_description.value | raw }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
