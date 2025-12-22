@@ -13,100 +13,107 @@ title: Appointment
 description: ''
 categories: {  }
 elements: |-
-  your_name:
-    '#type': textfield
-    '#title': 'Your Name'
-    '#title_display': before
-    '#placeholder': 'Enter Your Name'
-    '#required': true
-    '#required_error': 'Name Required'
-    '#wrapper_attributes':
-      class:
-        - form-control
-    '#attributes':
-      class:
-        - form-input
-    '#label_attributes':
-      class:
-        - form-label
-  your_email:
-    '#type': email
-    '#title': 'Your Email'
-    '#title_display': before
-    '#placeholder': 'Enter Your Email'
-    '#required': true
-    '#required_error': 'Email Required'
-    '#wrapper_attributes':
-      class:
-        - form-control
-    '#label_attributes':
-      class:
-        - form-label
-  your_phone:
-    '#type': textfield
-    '#title': 'Your Phone'
-    '#placeholder': 'Enter Your Phone'
-    '#required': true
-    '#required_error': 'Phone Required'
-    '#wrapper_attributes':
-      class:
-        - form-control
-  services:
-    '#type': select
-    '#title': Services
-    '#title_display': before
-    '#options':
-      1: 'Education Lawyer & Consultation'
-      2: 'Business Law'
-      3: 'Family Lawyer & Consultation, Immigration Law'
-      4: 'Criminal Lawyer & Consultation, Real Estate Law'
-    '#empty_option': 'Choose Services'
-    '#required': true
-    '#required_error': 'Services Required'
-    '#wrapper_attributes':
-      class:
-        - form-control
-    '#attributes':
-      style: form-input
-    '#label_attributes':
-      class:
-        - form-label
-  date:
-    '#type': date
-    '#title': Date
-    '#required': true
-    '#required_error': 'Date Required'
-    '#wrapper_attributes':
-      class:
-        - form-control
-    '#label_attributes':
-      class:
-        - form-label
-    '#date_days':
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-  available_hours:
-    '#type': select
-    '#title': 'Available Hours'
-    '#options':
-      '01': '09.00'
-      '02': '10.00'
-      '03': '11.00'
-      '04': '12.00'
-      '05': '14.00'
-      '06': '15.00'
-    '#empty_option': 'Choose Time'
-    '#required': true
-    '#required_error': 'Time Required'
-    '#wrapper_attributes':
-      class:
-        - form-control
-    '#label_attributes':
-      class:
-        - form-label
+  name:
+    '#type': webform_flexbox
+    '#justify_content': justify-space-between
+    your_name:
+      '#type': textfield
+      '#title': 'Your Name'
+      '#title_display': before
+      '#placeholder': 'Enter Your Name'
+      '#required': true
+      '#required_error': 'Name Required'
+      '#wrapper_attributes':
+        class:
+          - form-control
+      '#attributes':
+        class:
+          - form-input
+      '#label_attributes':
+        class:
+          - form-label
+    your_email:
+      '#type': email
+      '#title': 'Your Email'
+      '#title_display': before
+      '#placeholder': 'Enter Your Email'
+      '#required': true
+      '#required_error': 'Email Required'
+      '#wrapper_attributes':
+        class:
+          - form-control
+      '#label_attributes':
+        class:
+          - form-label
+  phone_services:
+    '#type': webform_flexbox
+    your_phone:
+      '#type': textfield
+      '#title': 'Your Phone'
+      '#placeholder': 'Enter Your Phone'
+      '#required': true
+      '#required_error': 'Phone Required'
+      '#wrapper_attributes':
+        class:
+          - form-control
+    services:
+      '#type': select
+      '#title': Services
+      '#title_display': before
+      '#options':
+        1: 'Education Lawyer & Consultation'
+        2: 'Business Law'
+        3: 'Family Lawyer & Consultation, Immigration Law'
+        4: 'Criminal Lawyer & Consultation, Real Estate Law'
+      '#empty_option': 'Choose Services'
+      '#required': true
+      '#required_error': 'Services Required'
+      '#wrapper_attributes':
+        class:
+          - form-control
+      '#attributes':
+        style: form-input
+      '#label_attributes':
+        class:
+          - form-label
+  date_wrapp:
+    '#type': webform_flexbox
+    date:
+      '#type': date
+      '#title': Date
+      '#required': true
+      '#required_error': 'Date Required'
+      '#wrapper_attributes':
+        class:
+          - form-control
+      '#label_attributes':
+        class:
+          - form-label
+      '#date_days':
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+    available_hours:
+      '#type': select
+      '#title': 'Available Hours'
+      '#options':
+        '01': '09.00'
+        '02': '10.00'
+        '03': '11.00'
+        '04': '12.00'
+        '05': '14.00'
+        '06': '15.00'
+      '#empty_option': 'Choose Time'
+      '#required': true
+      '#required_error': 'Time Required'
+      '#wrapper_attributes':
+        class:
+          - form-control
+      '#label_attributes':
+        class:
+          - form-label
   message:
     '#type': textarea
     '#title': Message
