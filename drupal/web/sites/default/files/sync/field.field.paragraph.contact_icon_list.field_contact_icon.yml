@@ -1,0 +1,21 @@
+uuid: 08302f1d-b6d5-431c-a07d-7e16ff038360
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_icon
+    - paragraphs.paragraphs_type.contact_icon_list
+  module:
+    - fontawesome
+id: paragraph.contact_icon_list.field_contact_icon
+field_name: field_contact_icon
+entity_type: paragraph
+bundle: contact_icon_list
+label: 'Contact Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

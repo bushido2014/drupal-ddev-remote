@@ -1,0 +1,20 @@
+uuid: 03728a2b-8762-4f86-aa6f-eec6158e69ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - geofield
+    - paragraphs
+id: paragraph.field_contact_map
+field_name: field_contact_map
+entity_type: paragraph
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

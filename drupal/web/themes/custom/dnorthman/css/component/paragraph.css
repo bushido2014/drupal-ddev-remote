@@ -266,3 +266,14 @@ grid-template-columns: repeat(2, 1fr);
   opacity: 1;
   padding: 20px;
 }
+
+.contact-wrapp {
+  margin-block-end: 50px;
+}
+
+.contact-item {
+  gap:15px;
+}
+.contact-bottom {
+  justify-content: space-between;
+}

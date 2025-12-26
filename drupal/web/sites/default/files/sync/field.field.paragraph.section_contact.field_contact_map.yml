@@ -1,0 +1,21 @@
+uuid: 2086a921-ec4c-45b0-84e1-871772d9c190
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_map
+    - paragraphs.paragraphs_type.section_contact
+  module:
+    - geofield
+id: paragraph.section_contact.field_contact_map
+field_name: field_contact_map
+entity_type: paragraph
+bundle: section_contact
+label: 'Contact Map'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

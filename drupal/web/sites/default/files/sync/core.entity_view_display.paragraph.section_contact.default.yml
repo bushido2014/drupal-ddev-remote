@@ -1,0 +1,55 @@
+uuid: 14b83208-31f5-45f2-8595-3af6c1f6bb1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_contact.field_contact_form
+    - field.field.paragraph.section_contact.field_contact_map
+    - field.field.paragraph.section_contact.field_icon_list
+    - field.field.paragraph.section_contact.field_title
+    - paragraphs.paragraphs_type.section_contact
+  module:
+    - entity_reference_revisions
+    - geofield
+    - webform
+id: paragraph.section_contact.default
+targetEntityType: paragraph
+bundle: section_contact
+mode: default
+content:
+  field_contact_form:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_contact_map:
+    type: geofield_default
+    label: hidden
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_icon_list:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,10 @@
+uuid: dfd2f996-e61e-4120-a774-df59e4749404
+langcode: en
+status: true
+dependencies: {  }
+id: contact_icon_list
+label: 'Contact Icon List'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

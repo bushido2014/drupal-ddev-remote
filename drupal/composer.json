@@ -23,6 +23,7 @@
         "drupal/core-recommended": "^11.2",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/fontawesome": "^3.0",
+        "drupal/geofield_map": "^11.1",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.14",
         "drupal/token": "^1.16",

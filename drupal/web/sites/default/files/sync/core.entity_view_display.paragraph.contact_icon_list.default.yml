@@ -1,0 +1,32 @@
+uuid: 7bbca0d7-97a1-459f-a36b-04eb32ea0a72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_icon_list.field_contact_icon
+    - field.field.paragraph.contact_icon_list.field_contact_value_text
+    - paragraphs.paragraphs_type.contact_icon_list
+  module:
+    - fontawesome
+id: paragraph.contact_icon_list.default
+targetEntityType: paragraph
+bundle: contact_icon_list
+mode: default
+content:
+  field_contact_icon:
+    type: fontawesome_icon_formatter
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_contact_value_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
