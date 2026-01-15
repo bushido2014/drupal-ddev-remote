@@ -1,0 +1,12 @@
+{# Eliminăm wrapper-ul exterior și iterăm direct prin iteme #}
+{% for item in items %}
+  {# 
+    Accesăm entitatea (termenul de taxonomie) pentru a genera link-ul manual 
+    sau aplicăm clasele direct pe conținutul randat.
+  #}
+  {{ item.content|merge({
+    '#attributes': {
+      'class': ['btn', 'btn-primary']
+    }
+  }) }}
+{% endfor %}
