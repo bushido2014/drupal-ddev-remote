@@ -1,6 +1,7 @@
 .header {
-  
-  background-color: transparent;
+   background-color: var(--color-primary); 
+  /* background: rgba(30, 46, 69, 0.65); */
+  /* background-color: transparent; */
   color: var(--color-white);
   width: 100%;
   position: fixed;
@@ -163,6 +164,6 @@
   }
 } 
 
-.node--type-home .header {
+/* .node--type-home .header {
   background-color: var(--color-primary);
-}
+} */

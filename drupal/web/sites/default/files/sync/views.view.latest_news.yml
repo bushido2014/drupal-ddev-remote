@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - image.style.thumbnail
+    - image.style.media_library
     - node.type.news
   module:
     - image
@@ -79,7 +79,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: thumbnail
+            image_style: media_library
             image_loading:
               attribute: lazy
           group_column: ''

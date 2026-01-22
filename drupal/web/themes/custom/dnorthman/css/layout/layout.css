@@ -6,12 +6,28 @@
 
 .page.has-sidebar.layout-70-30 .page-content {
   width: 70%;
+  padding: 30px 0;
 }
 
 .page.has-sidebar .sidebar-second {
   width: 30%;
   padding: 20px;
   
+}
+
+.sidebar-second .views-row {
+  padding: 20px 0;
+
+}
+
+.sidebar-second .views-row .views-field-title{
+  padding: 10px 0;
+
+}
+
+
+.sidebar-second .btn {
+ padding: 0.45rem 2.2rem;
 }
 
 .page {
