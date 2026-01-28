@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .news-full-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

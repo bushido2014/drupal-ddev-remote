@@ -153,8 +153,11 @@
   border-bottom: none;
 }
 
-@media (max-width: 768px) {
-  .news-full-wrapper {
-    grid-template-columns: 1fr;
-  }
+
+.node--type-cases .page-title-inner h1{
+    font-size: 3rem;
+}
+
+.node--type-cases .page-title-inner {
+    margin-block-start: 40px;
 }
