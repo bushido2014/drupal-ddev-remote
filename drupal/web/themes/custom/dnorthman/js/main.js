@@ -1,31 +1,68 @@
-/**
- * @file
- * dnorthman theme JavaScript.
- */
+(function (Drupal) {
+  'use strict';
 
-(function (Drupal, once) {
-  "use strict";
-
-
-const navbarHeader = document.querySelector('.header');
-
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbarHeader.classList.add('header-scrolled');
-  } else {
-    navbarHeader.classList.remove('header-scrolled');
-  }
-});
-
-
-  Drupal.behaviors.dnorthman = {
+  Drupal.behaviors.stickyHeader = {
     attach: function (context, settings) {
-      // Restul comportamentului tău
-      if (!document.body.classList.contains("dnorthman-loaded")) {
-        console.log("🎨 Dnorthman theme loaded successfully!");
-        document.body.classList.add("dnorthman-loaded");
+      // Run only once on document
+      if (context !== document) {
+        return;
       }
-    },
+
+      const navbarHeader = document.querySelector('.header');
+      const body = document.body;
+      
+      if (!navbarHeader) {
+        return;
+      }
+
+      // Define pages where sticky header should be disabled
+      const excludedNodeTypes = [
+        'node--type-home',          // Home page
+        // 'node--type-landing',    // Uncomment to exclude landing pages
+        // 'node--type-promo',      // Uncomment to exclude promo pages
+      ];
+
+      const currentPath = window.location.pathname;
+      const excludedPaths = [
+        '/home',
+        '/ro/home',
+        '/en/home',
+      ];
+
+      // Check if current page should be excluded
+      const isExcludedNodeType = excludedNodeTypes.some(className => 
+        body.classList.contains(className)
+      );
+      
+      const isExcludedPath = excludedPaths.some(path => 
+        currentPath === path
+      );
+
+      // Skip if excluded
+      if (isExcludedNodeType || isExcludedPath) {
+        // Cleanup
+        navbarHeader.classList.remove('header-scrolled');
+        navbarHeader.removeAttribute('data-scroll-initialized');
+        return;
+      }
+
+      // Prevent multiple initializations
+      if (navbarHeader.hasAttribute('data-scroll-initialized')) {
+        return;
+      }
+
+      navbarHeader.setAttribute('data-scroll-initialized', 'true');
+
+      const handleScroll = () => {
+        if (window.scrollY > 250) {
+          navbarHeader.classList.add('header-scrolled');
+        } else {
+          navbarHeader.classList.remove('header-scrolled');
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+    }
   };
-})(Drupal, once);
+
+})(Drupal);
