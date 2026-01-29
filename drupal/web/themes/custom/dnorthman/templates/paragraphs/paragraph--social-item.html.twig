@@ -1,0 +1,12 @@
+
+
+<a href="{{ paragraph.field_social_link.uri }}" 
+   class="social-icon-link"
+   title="{{ paragraph.field_social_name.value }}"
+   target="_blank"
+   rel="noopener noreferrer"
+>
+  {% if content.field_social_icon %}
+    {{ content.field_social_icon }}
+  {% endif %}
+</a>

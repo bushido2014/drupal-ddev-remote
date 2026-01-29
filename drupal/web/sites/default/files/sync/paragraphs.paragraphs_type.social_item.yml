@@ -1,0 +1,10 @@
+uuid: ea352307-e674-4f7c-b999-50f0e29c70a2
+langcode: en
+status: true
+dependencies: {  }
+id: social_item
+label: 'Social Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

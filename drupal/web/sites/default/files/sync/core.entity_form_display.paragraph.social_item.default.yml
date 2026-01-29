@@ -1,0 +1,42 @@
+uuid: f4f5d28c-f648-4f5b-a478-ff88cee51dbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_item.field_social_icon
+    - field.field.paragraph.social_item.field_social_link
+    - field.field.paragraph.social_item.field_social_name
+    - paragraphs.paragraphs_type.social_item
+  module:
+    - fontawesome
+    - link
+id: paragraph.social_item.default
+targetEntityType: paragraph
+bundle: social_item
+mode: default
+content:
+  field_social_icon:
+    type: fontawesome_icon_widget
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_social_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_social_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

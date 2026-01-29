@@ -45,8 +45,26 @@
   </div>
 {% endif %}
 
-{% if page.footer %}
-  <footer role="contentinfo">
+  <footer role="contentinfo" class="footer">
+  <div class="container">
+  {% if page.footer_top %}
+    <div class="footer-top">
+    {{ page.footer_top }}
+    </div>
+    {% endif %}
+  
+  <div class="footer-middle d-flex">
+  {% if page.footer %}
+    <div class="footer-item">
     {{ page.footer }}
+    </div>
+    {% endif %}
+    </div>
+    
+    {% if page.footer_bottom %}
+    <div class="footer-bottom">
+    {{ page.footer_bottom }}
+    </div>
+    {% endif %}
+    </div>
   </footer>
-{% endif %}

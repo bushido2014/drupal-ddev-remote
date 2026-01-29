@@ -20,4 +20,6 @@ regions:
   sidebar_second: 'Sidebar Second'
   content_bottom: 'Content Bottom'
   homearticle: 'Home Article'
+  footer_top: 'Footer Top'
   footer: 'Footer'
+  footer_bottom: 'Footer Bottom'

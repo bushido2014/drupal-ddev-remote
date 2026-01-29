@@ -1,0 +1,33 @@
+uuid: eddc64b6-072c-4c84-b7fa-d0b67458cd91
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_items_block
+    - field.field.block_content.social_items_block.field_description
+    - field.field.block_content.social_items_block.field_social_items
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.social_items_block.default
+targetEntityType: block_content
+bundle: social_items_block
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_social_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

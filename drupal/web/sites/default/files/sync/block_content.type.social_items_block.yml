@@ -1,0 +1,8 @@
+uuid: 407c5cbb-1e15-4cbc-bb99-a9e02aaa856e
+langcode: en
+status: true
+dependencies: {  }
+id: social_items_block
+label: 'Social Items Block'
+revision: false
+description: null

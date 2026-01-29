@@ -1,0 +1,23 @@
+uuid: e2a2877a-98d7-45e5-9c8a-a42a0081abf3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_items_block:44391b7a-568a-4830-975e-ceaff8a36349'
+  module:
+    - block_content
+  theme:
+    - dnorthman
+id: dnorthman_aboutus
+theme: dnorthman
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:44391b7a-568a-4830-975e-ceaff8a36349'
+settings:
+  id: 'block_content:44391b7a-568a-4830-975e-ceaff8a36349'
+  label: 'About Us'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

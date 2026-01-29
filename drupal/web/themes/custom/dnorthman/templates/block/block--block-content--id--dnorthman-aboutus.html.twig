@@ -1,0 +1,12 @@
+<div{{ attributes }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+<div class="social-desc">
+  {{ content.field_description }}
+</div>
+<div class="social-links d-flex">
+  {{ content.field_social_items }}
+</div>
+</div>

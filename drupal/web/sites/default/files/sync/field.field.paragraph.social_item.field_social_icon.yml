@@ -1,0 +1,21 @@
+uuid: 5ae3382a-7874-4c12-a363-affef8848df9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_social_icon
+    - paragraphs.paragraphs_type.social_item
+  module:
+    - fontawesome
+id: paragraph.social_item.field_social_icon
+field_name: field_social_icon
+entity_type: paragraph
+bundle: social_item
+label: 'Social Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

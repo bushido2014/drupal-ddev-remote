@@ -1,0 +1,27 @@
+uuid: 557d5103-56cf-483b-86aa-54fbf1dec825
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dnorthman
+id: dnorthman_sitebranding
+theme: dnorthman
+region: footer_top
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/*'
