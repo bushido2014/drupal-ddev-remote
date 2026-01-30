@@ -18,6 +18,20 @@ footer.footer h2 {
 .footer-middle {
     padding-block-start: 25px;
 }
+.footer-middle.column-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+.footer-middle.column-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer-middle.column-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .footer-middle .social-links {
     gap: 15px;
+}
+
+.footer-middle .main-menu {
+    flex-direction: column;
 }

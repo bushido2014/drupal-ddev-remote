@@ -7,18 +7,20 @@
         {{ page.footer_top }}
       </div>
     {% endif %}
-  
-    {% if page.footer %}
-      {% set footer_items = page.footer['#'] %}
-      {% set column_count = footer_items|length %}
-      
-      <div class="footer-middle d-grid column-{{ column_count }}">
-        <div class="footer-item">
-          {{ page.footer }}
-        </div>
-      </div>
-    {% endif %}
     
+  {% if page.footer %}
+    {% set column_count = 0 %}
+{% for key, item in page.footer %}
+  {% if key|first != '#' %}
+    {% set column_count = column_count + 1 %}
+  {% endif %}
+{% endfor %}
+<div class="footer-middle d-grid column-{{ column_count }}">
+  {{ page.footer }}
+</div>
+  {% endif %}
+
+
     {% if page.footer_bottom %}
       <div class="footer-bottom">
         {{ page.footer_bottom }}
