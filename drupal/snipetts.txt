@@ -1,6 +1,7 @@
 curl -fsSL https://ddev.com/install.sh | bash
 
-ddev composer install 
+
+ddev start
 
 ddev composer require 'drupal/entity_usage:^2.0@beta'
 

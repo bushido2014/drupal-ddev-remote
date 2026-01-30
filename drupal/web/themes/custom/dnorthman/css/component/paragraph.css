@@ -18,16 +18,7 @@
     width: 55%;
 }
 
-.partnership-logos {
-  grid-template-columns: repeat(4, 1fr);
-}
-.home-about {
-grid-template-columns: repeat(2, 1fr);
-}
 
-.home-services__wrapp {
-    grid-template-columns: repeat(2, 1fr);
-}
 .services-content {
     padding-top: 60px;
     padding-left: 40px;
@@ -83,9 +74,7 @@ grid-template-columns: repeat(2, 1fr);
     font-family: var(--font-heading);
  }
 
- .home-lawyer-list {
-    grid-template-columns: repeat(4, 1fr);
- }
+
 
  .about-legal-lawyer {
     text-align: center;

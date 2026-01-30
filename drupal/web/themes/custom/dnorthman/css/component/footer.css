@@ -16,7 +16,7 @@ footer.footer h2 {
     font-size: 1.3rem;
 }
 .footer-middle {
-    padding-block-start: 25px;
+    padding-block: 25px;
 }
 .footer-middle.column-1 {
     grid-template-columns: repeat(1, 1fr);
@@ -37,4 +37,9 @@ footer.footer h2 {
 
 .footer-middle .main-menu {
     flex-direction: column;
+}
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    text-align: center;
 }

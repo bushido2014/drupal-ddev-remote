@@ -1,0 +1,23 @@
+uuid: 8cd3159e-cf7d-4201-a400-ac3c845b3446
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:05dfb14f-1ab0-401f-a630-e9a1fa68b55e'
+  module:
+    - block_content
+  theme:
+    - dnorthman
+id: dnorthman_footerbottomblock
+theme: dnorthman
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:05dfb14f-1ab0-401f-a630-e9a1fa68b55e'
+settings:
+  id: 'block_content:05dfb14f-1ab0-401f-a630-e9a1fa68b55e'
+  label: 'Footer Bottom Block'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }
