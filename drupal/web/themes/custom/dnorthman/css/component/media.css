@@ -1,5 +1,29 @@
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 992px) {
+  .home-lawyer-list {
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer-middle.column-4 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
 @media (max-width: 768px) {
   .news-full-wrapper {
     grid-template-columns: 1fr;
   }
+  .home-lawyer-list, .footer-middle.column-3,.footer-middle.column-2,
+  .footer-middle.column-4 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+}
+
+@media (max-width: 600px) {
+  
 }

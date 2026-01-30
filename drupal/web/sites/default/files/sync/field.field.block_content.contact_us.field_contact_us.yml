@@ -1,0 +1,109 @@
+uuid: 2a21b824-6c72-4940-85f5-3a5222970b18
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.storage.block_content.field_contact_us
+    - paragraphs.paragraphs_type.contact_icon_list
+  module:
+    - entity_reference_revisions
+id: block_content.contact_us.field_contact_us
+field_name: field_contact_us
+entity_type: block_content
+bundle: contact_us
+label: 'Contact Us'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      contact_icon_list: contact_icon_list
+    negate: 0
+    target_bundles_drag_drop:
+      about_welcome:
+        weight: 28
+        enabled: false
+      accordion:
+        weight: 29
+        enabled: false
+      accordion_item:
+        weight: 30
+        enabled: false
+      article_reference:
+        weight: 31
+        enabled: false
+      contact_icon_list:
+        weight: 32
+        enabled: true
+      home_article_about:
+        weight: 33
+        enabled: false
+      home_cases_section:
+        weight: 34
+        enabled: false
+      home_hero_section:
+        weight: 35
+        enabled: false
+      home_lawyers_section:
+        weight: 36
+        enabled: false
+      home_services:
+        weight: 37
+        enabled: false
+      lawyer_stats:
+        weight: 38
+        enabled: false
+      legal_attorney:
+        weight: 39
+        enabled: false
+      library_reference:
+        weight: 40
+        enabled: false
+      link:
+        weight: 41
+        enabled: false
+      link_secondary:
+        weight: 42
+        enabled: false
+      professional_legal_lawyer:
+        weight: 43
+        enabled: false
+      section_about_legal:
+        weight: 44
+        enabled: false
+      section_about_success:
+        weight: 45
+        enabled: false
+      section_contact:
+        weight: 46
+        enabled: false
+      section_legal_lawyer:
+        weight: 47
+        enabled: false
+      section_news:
+        weight: 48
+        enabled: false
+      section_partnership:
+        weight: 49
+        enabled: false
+      section_vision:
+        weight: 50
+        enabled: false
+      services_heading:
+        weight: 51
+        enabled: false
+      social_item:
+        weight: 52
+        enabled: false
+      testimonials:
+        weight: 53
+        enabled: false
+      vision_cards:
+        weight: 54
+        enabled: false
+field_type: entity_reference_revisions

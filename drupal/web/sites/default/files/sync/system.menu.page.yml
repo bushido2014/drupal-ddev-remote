@@ -1,0 +1,8 @@
+uuid: 5fb52b73-6a8f-448f-9c18-a096c32810fe
+langcode: en
+status: true
+dependencies: {  }
+id: page
+label: Page
+description: ''
+locked: false

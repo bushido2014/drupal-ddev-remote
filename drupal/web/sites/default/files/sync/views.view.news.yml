@@ -311,6 +311,7 @@ display:
       menu:
         type: normal
         title: News
+        weight: -45
         menu_name: main
         parent: ''
     cache_metadata:

@@ -1,0 +1,23 @@
+uuid: b09d9cf4-8178-4f37-b5e5-075e9afdca2d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_us:abbcd85c-395f-44f9-998f-a7bafeedf68f'
+  module:
+    - block_content
+  theme:
+    - dnorthman
+id: dnorthman_contactus
+theme: dnorthman
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:abbcd85c-395f-44f9-998f-a7bafeedf68f'
+settings:
+  id: 'block_content:abbcd85c-395f-44f9-998f-a7bafeedf68f'
+  label: 'Contact Us'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: ed196847-a593-4fc4-9bf4-9375f26a8c0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.page
+  module:
+    - system
+  theme:
+    - dnorthman
+id: dnorthman_page
+theme: dnorthman
+region: footer
+weight: -10
+provider: null
+plugin: 'system_menu_block:page'
+settings:
+  id: 'system_menu_block:page'
+  label: Page
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

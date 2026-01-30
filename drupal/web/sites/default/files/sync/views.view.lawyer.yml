@@ -332,6 +332,7 @@ display:
       menu:
         type: normal
         title: Lawyer
+        weight: -47
         menu_name: main
         parent: ''
     cache_metadata:
