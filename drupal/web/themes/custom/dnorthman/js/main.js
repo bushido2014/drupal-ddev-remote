@@ -1,6 +1,27 @@
 (function (Drupal) {
   'use strict';
 
+ // Scroll top button
+      let scrollTop = document.querySelector('.scroll-top');
+      if (scrollTop) {
+        // Click handler
+        scrollTop.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Scroll visibility
+        function toggleScrollTop() {
+          if (window.scrollY > 100) {
+            scrollTop.classList.add('active');
+          } else {
+            scrollTop.classList.remove('active');
+          }
+        }
+        window.addEventListener('scroll', toggleScrollTop);
+        toggleScrollTop(); // Initial check
+      }
+
   Drupal.behaviors.stickyHeader = {
     attach: function (context, settings) {
       // Run only once on document
@@ -54,7 +75,7 @@
       navbarHeader.setAttribute('data-scroll-initialized', 'true');
 
       const handleScroll = () => {
-        if (window.scrollY > 250) {
+        if (window.scrollY > 170) {
           navbarHeader.classList.add('header-scrolled');
         } else {
           navbarHeader.classList.remove('header-scrolled');
@@ -64,5 +85,7 @@
       window.addEventListener('scroll', handleScroll);
     }
   };
+
+  
 
 })(Drupal);

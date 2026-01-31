@@ -1,0 +1,29 @@
+.scroll-top.active{
+    visibility: visible;
+    opacity: 1;
+  color: var(--gray-color-25);
+}
+
+
+.scroll-top {
+    padding-top:8px;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background-color: var(--dark-color);
+    color: var(--white-color); 
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+.scroll-top__icon {
+ justify-content: center;
+}
+
+.fa-arrow-up {
+    font-size: 1.70rem;
+}

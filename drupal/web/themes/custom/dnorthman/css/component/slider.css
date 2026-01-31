@@ -4,7 +4,9 @@
  .testimonial-content_img {
     width: 60%;
  } */
-
+.testimonial-section {
+  overflow: hidden;
+}
 .testimonial-hero {
     margin-bottom: 30px;
 }
