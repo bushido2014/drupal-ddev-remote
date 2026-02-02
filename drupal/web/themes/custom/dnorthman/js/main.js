@@ -1,27 +1,7 @@
 (function (Drupal) {
   'use strict';
 
- // Scroll top button
-      let scrollTop = document.querySelector('.scroll-top');
-      if (scrollTop) {
-        // Click handler
-        scrollTop.addEventListener('click', (e) => {
-          e.preventDefault();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-        
-        // Scroll visibility
-        function toggleScrollTop() {
-          if (window.scrollY > 100) {
-            scrollTop.classList.add('active');
-          } else {
-            scrollTop.classList.remove('active');
-          }
-        }
-        window.addEventListener('scroll', toggleScrollTop);
-        toggleScrollTop(); // Initial check
-      }
-
+  // Sticky Header Behavior
   Drupal.behaviors.stickyHeader = {
     attach: function (context, settings) {
       // Run only once on document
@@ -39,8 +19,6 @@
       // Define pages where sticky header should be disabled
       const excludedNodeTypes = [
         'node--type-home',          // Home page
-        // 'node--type-landing',    // Uncomment to exclude landing pages
-        // 'node--type-promo',      // Uncomment to exclude promo pages
       ];
 
       const currentPath = window.location.pathname;
@@ -86,6 +64,45 @@
     }
   };
 
-  
+  // Scroll Top Button Behavior
+  Drupal.behaviors.scrollTopButton = {
+    attach: function (context, settings) {
+      // Run only once on document
+      if (context !== document) {
+        return;
+      }
+
+      const scrollTop = document.querySelector('.scroll-top');
+      
+      if (!scrollTop) {
+        return;
+      }
+
+      // Prevent multiple initializations
+      if (scrollTop.hasAttribute('data-scroll-top-initialized')) {
+        return;
+      }
+
+      scrollTop.setAttribute('data-scroll-top-initialized', 'true');
+
+      // Click handler
+      scrollTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      
+      // Scroll visibility
+      const toggleScrollTop = () => {
+        if (window.scrollY > 100) {
+          scrollTop.classList.add('active');
+        } else {
+          scrollTop.classList.remove('active');
+        }
+      };
+
+      window.addEventListener('scroll', toggleScrollTop);
+      toggleScrollTop(); // Initial check
+    }
+  };
 
 })(Drupal);

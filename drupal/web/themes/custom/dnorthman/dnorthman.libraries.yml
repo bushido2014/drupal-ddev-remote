@@ -27,6 +27,7 @@ global:
       css/theme/print.css: { media: print }
   js:
     js/main.js: {}
+    js/mobile-menu.js: {}
   dependencies:
     - core/drupal
     - core/once

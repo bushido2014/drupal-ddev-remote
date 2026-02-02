@@ -1,5 +1,61 @@
 @media (max-width: 1024px) {
+
+  .main-menu {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-primary);
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .main-menu.active {
+    display: flex !important;
+  }
+
+  .main-nav__mobile-toggle {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+
   
+  .main-menu li {
+    display: block;
+    padding: 8px 0;
+    width: 100%;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.3s ease forwards;
+  }
+
+  .main-menu.is-active li {
+    animation: slideIn 0.3s ease forwards;
+  }
+
+  .main-menu.is-active li:nth-child(1) { animation-delay: 0.05s; }
+  .main-menu.is-active li:nth-child(2) { animation-delay: 0.1s; }
+  .main-menu.is-active li:nth-child(3) { animation-delay: 0.15s; }
+  .main-menu.is-active li:nth-child(4) { animation-delay: 0.2s; }
+  .main-menu.is-active li:nth-child(5) { animation-delay: 0.25s; }
+  .main-menu.is-active li:nth-child(6) { animation-delay: 0.3s; }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Optional: Prevent body scroll when menu is open */
+  body.mobile-menu-open {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 992px) {
@@ -52,8 +108,4 @@
 }
 
 
-}
-
-@media (max-width: 600px) {
-  
 }
