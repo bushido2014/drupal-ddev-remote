@@ -35,9 +35,22 @@ footer.footer h2 {
     gap: 15px;
 }
 
-.footer-middle .main-menu {
+.footer-middle .menu {
     flex-direction: column;
+    gap: 10px;
+    align-items: baseline;
 }
+
+.footer-middle .menu a {
+    color: var(--color-white);
+}
+
+.footer-middle .menu a:hover {
+    color: var(--color-white);
+    color: var(--color-accent);
+}
+
+
 .footer-bottom {
     border-top: 1px solid #ccc;
     padding-top: 20px;

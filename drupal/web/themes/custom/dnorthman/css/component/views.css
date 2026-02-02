@@ -2,9 +2,7 @@
     padding: 15px 0;
 }
 
-.news-list {
-    grid-template-columns: repeat(2, 1fr);
-}
+
 
 .lawyer-item .views-field {
     padding: 10px 0;

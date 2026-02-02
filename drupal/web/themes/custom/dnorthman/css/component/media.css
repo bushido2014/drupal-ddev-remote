@@ -93,6 +93,16 @@
   text-align: center;
 }
 
+.welcome-wrapp,.vision-cards,.contact-bottom {
+  flex-wrap: wrap;
+}
+.news-item  {
+  margin-block: 10px;
+}
+.contact-item {
+  padding: 20px;
+}
+
 }
 
 @media (max-width: 768px) {

@@ -1,9 +1,9 @@
 <section class="news"> 
 
 <div class="container">
-<div class="news-list d-grid">
+<div class="news-list d-grid cols-2">
   {% for row in rows %}
-    <div class="lawyer-item">
+    <div class="news-item">
       {{ row.content }}
     </div>
   {% endfor %}

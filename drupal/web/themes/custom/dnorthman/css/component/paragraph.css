@@ -80,6 +80,7 @@
     text-align: center;
     background-color: var(--color-primary);
     color: var(--color-white);
+    margin-block: 15px;
  }
  .about-legal-lawyer h2 {
     color: var(--color-white) !important;
@@ -94,9 +95,7 @@
  }
 
  
-.home-news-list {
-    grid-template-columns: repeat(3, 1fr);
-}
+
 
 .news-title a{
   color: var(--color-primary)
@@ -106,7 +105,6 @@
     padding: 25px 0;
 }
 .article-heading {
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     
 }
@@ -137,11 +135,7 @@
     grid-template-columns: 1fr;
 }
 
-.services-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-}
+
 
 .service-item__link {
     font-size: 1.3rem;
