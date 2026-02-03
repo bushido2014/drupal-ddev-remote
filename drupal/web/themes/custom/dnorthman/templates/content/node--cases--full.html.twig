@@ -1,19 +1,29 @@
+<section class="bg-page-title">
+    <div class="container d-flex">
+      <h1 class="page-title">Cases Detail</h1>
+      </div>
+  </section>
 <article{{ attributes.addClass('cases-node') }}>
   <div class="container">
 
-    <div class="d-flex">
-      <div style="cases-img">
+    <div class="d-flex cases-body-top">
+
         <div class="case-main-image">
            {{ content.field_image_cases }}
          </div>
-      </div>
+
+         <div class="cases-title">
+         <h2>{{label}}</h2>
+         </div>
+
+      
     </div>
 
-    <div class="d-flex">
-      <div style="width:70%">
+    <div class="cases-body-wrapp d-flex">
+      <div class="cases-description">
         {{ content.body }}
       </div>
-      <div style="width:30%">
+      <div class="cases-client">
         {{ content.field_image_client }}
         {{ content.field_client_name }}
         {{ content.field_client_occupation }}

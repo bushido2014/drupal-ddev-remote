@@ -1,0 +1,14 @@
+<div class="client-img">
+{% for item in items %}
+  {% if item.content['#media'] %}
+    {% set media = item.content['#media'] %}
+    {% if media.field_media_image.entity %}
+      <img
+        src="{{ file_url(media.field_media_image.entity.uri.value) }}"
+        alt="{{ media.field_media_image.alt }}"
+        loading="lazy"
+      />
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>

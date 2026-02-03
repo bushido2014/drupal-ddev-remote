@@ -24,7 +24,7 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/home\r\n/user/login"
+    pages: "/home\r\n/user/login\r\n/cases/*"
   user_role:
     id: user_role
     negate: false
