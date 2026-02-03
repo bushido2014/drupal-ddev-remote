@@ -170,10 +170,13 @@
   font-size: 1.8rem;
   font-weight: 700;
 }
-
+.client-img {
+padding: 30px;
+}
 .client-img img {
-  padding: 10px;
-  width: 90%;
+  
+  width:100%;
+  object-fit:cover;
 }
 
 .cases-body-wrapp {
@@ -185,4 +188,14 @@
 .cases-client {
   width: 35%;
   position:relative;
+  text-align: center;
+}
+
+.client-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
 }
