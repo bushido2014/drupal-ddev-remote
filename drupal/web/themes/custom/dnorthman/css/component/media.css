@@ -59,6 +59,9 @@
 }
 
 @media (max-width: 992px) {
+  .page-title-inner h1,.bg-page-title h1 {
+    font-size: 2.8rem;
+  }
 
 .cols-2 {
   grid-template-columns: repeat(1, 1fr);

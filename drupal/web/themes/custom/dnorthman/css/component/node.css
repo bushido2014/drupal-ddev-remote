@@ -156,3 +156,12 @@
 .node--type-cases .page-title-inner {
     margin-block-start: 40px;
 }
+
+.services-prices {
+  padding-block: 10px;
+}
+
+.services-prices span {
+  font-size: 1.8rem;
+  font-weight: 700;
+}

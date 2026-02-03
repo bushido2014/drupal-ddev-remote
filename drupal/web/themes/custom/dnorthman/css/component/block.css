@@ -38,7 +38,7 @@
 }
 
 .page-title-inner {
-  /* nu mai are nevoie de flex aici */
+    margin-top: 50px;
 }
 
 .page-title,

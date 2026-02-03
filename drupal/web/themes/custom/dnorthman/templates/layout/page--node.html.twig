@@ -9,7 +9,7 @@
 {% set page_classes = [
   'page',
   node ? 'page-type--' ~ node.getType()|clean_class,
-  has_sidebar ? 'has-sidebar' : 'no-sidebar',
+  has_sidebar ? 'has-sidebar container' : 'no-sidebar',
   has_sidebar ? 'layout-70-30' : 'layout-full',
 ] %}
 
@@ -27,11 +27,12 @@
   {{ page.content_top }}
 {% endif %}
 
-<div class="container">
+
 
   <div{{ attributes.addClass(page_classes) }}>
 
   <div class="page-content">
+
     {% if page.content %}
       {{ page.content }}
     {% endif %}
@@ -44,7 +45,7 @@
     </aside>
   {% endif %}
 
- </div>
+ 
 
 </div>
 
