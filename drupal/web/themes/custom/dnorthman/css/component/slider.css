@@ -5,7 +5,7 @@
     width: 60%;
  } */
 .testimonial-section {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .testimonial-hero {
     margin-bottom: 30px;
