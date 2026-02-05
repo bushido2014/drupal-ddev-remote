@@ -7,6 +7,7 @@
   --color-light-gray: #E8E9E1;
   --color-black: #1A1A1A;
   --font-heading: 'DM Serif Display', serif;
+  --font-display: 'DM Sans', sans-serif;
 }
 
 html, body {
@@ -19,7 +20,7 @@ html, body {
   box-sizing: inherit; }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-display);
   background: var(--color-light-gray);
   color: var(--color-dark-gray);
   margin: 0;

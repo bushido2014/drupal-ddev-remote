@@ -21,10 +21,11 @@ global:
       css/component/tabs.css: {}
       css/component/media.css: {}
       css/component/views.css: {}
+    theme:
+      css/theme/print.css: { media: print }  
     layout:
       css/layout/layout.css: {}
-    theme:
-      css/theme/print.css: { media: print }
+      
   js:
     js/main.js: {}
     js/mobile-menu.js: {}

@@ -135,7 +135,9 @@
     grid-template-columns: 1fr;
 }
 
-
+.lawyer-item {
+    text-align: center;
+}
 
 .service-item__link {
     font-size: 1.3rem;

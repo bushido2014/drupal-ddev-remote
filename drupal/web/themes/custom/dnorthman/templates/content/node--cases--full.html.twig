@@ -25,7 +25,7 @@
       </div>
       <div class="cases-client">
         {{ content.field_image_client }}
-        <div class="client-info">
+        <div class="client-about">
         {{ content.field_client_name }}
         {{ content.field_client_occupation }}
         </div>
@@ -37,7 +37,7 @@
         <h2>Attorney in this case</h2>
       </div>
 
-      <div class="attorney-cases-wrapp d-grid">
+      <div class="attorney-cases-wrapp d-grid cols-3">
         {% for item in node.field_attorney %}
           {% set lawyer = item.entity %}
           {% if lawyer %}

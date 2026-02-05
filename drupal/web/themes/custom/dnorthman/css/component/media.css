@@ -56,6 +56,14 @@
   body.mobile-menu-open {
     overflow: hidden;
   }
+  .cases-node .d-flex {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .cases-description {
+    width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
