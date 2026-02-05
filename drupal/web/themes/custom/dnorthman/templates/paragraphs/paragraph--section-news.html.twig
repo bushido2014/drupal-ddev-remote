@@ -17,19 +17,18 @@
 
            {% if news.field_image is not empty %}
             <div class="news-image">
-             
                <img src="{{ news.field_image|file_url }}" alt="{{ news.field_image.alt }}">
             </div>
          {% endif %}
 
-          {# Titlu #}
+          {# Title #}
           <h3 class="news-title">
             <a href="{{ path('entity.node.canonical', {'node': news.id}) }}">
               {{ news.label }}
             </a>
           </h3>
 
-          {# Buton #}
+          {# Button #}
           <div class="see-more">
             <a href="{{ path('entity.node.canonical', {'node': news.id}) }}" class="btn btn-secondary">
               See Detail

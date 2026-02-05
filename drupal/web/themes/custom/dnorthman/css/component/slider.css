@@ -19,6 +19,9 @@
   overflow: hidden; /* important ca slide-urile să nu iasă din container */
   max-width:80rem;
 }
+.client-info {
+  gap:20px;
+}
 
 .client-logo {
     padding: 20px;
@@ -32,4 +35,10 @@
     object-position: center top; 
     border-radius: 50%;
     
+}
+
+.client-wrapp .client-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: var(--font-heading);
 }

@@ -7,3 +7,20 @@
 .lawyer-item .views-field {
     padding: 10px 0;
 }
+
+.lawyer-list .lawyer-item .field-content a {
+    color: var(--color-dark-gray);
+    transition: all .25s ease;
+}
+
+.lawyer-list .lawyer-item .field-content a:hover {
+    color: var(--color-accent);
+}
+
+.news-list .news-item .field-content {
+    padding-block: 20px;
+}
+
+.news-list .news-item .views-field-view-node {
+    margin-block: 20px;
+}

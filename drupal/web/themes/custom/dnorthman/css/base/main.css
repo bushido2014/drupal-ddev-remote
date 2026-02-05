@@ -127,3 +127,9 @@ section {
     margin: 0;
     list-style: none;
 }
+
+figure {
+    display: inline-block;
+    margin: 0;
+    text-align:center;
+}
