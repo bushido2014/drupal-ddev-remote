@@ -1,10 +1,9 @@
-{#
-/**
- * @file
- * Paragraph template: section.vision
- */
-#}
-<section{{ attributes.addClass('vision') }}>
+{%
+  set classes = [
+    'vision',
+  ]
+%}
+<section{{ create_attribute().addClass(classes) }}>
     <div class="container">
        
         {% if paragraph.field_vision_cards is not empty %}

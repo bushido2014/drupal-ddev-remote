@@ -1,5 +1,10 @@
-<section class="proffi-lawyer">
-  <div class="container">
+{%
+  set classes = [
+    'proffi-lawyer',
+  ]
+%}
+<section{{ create_attribute().addClass(classes) }}>
+  <div class="container testare">
     <div class="proffi-lawyer-wrapp d-flex">
     <h2>{{ paragraph.field_title.value }}</h2>
     {{ content.field_link_simple }}
@@ -15,7 +20,7 @@
     <img src="{{ lawyer.field_image_lawyer|file_url }}" alt="{{ lawyer.field_image_lawyer.alt }}">
   </div>
 {% endif %}
-          <div class="lawyer-name">{{ lawyer.label }}</div>
+          <div class="lawyer-name"><h4>{{ lawyer.label }}</h4></div>
           <div class="lawyer-occupation">
             {{ lawyer.field_occupation.value }}
           </div>
