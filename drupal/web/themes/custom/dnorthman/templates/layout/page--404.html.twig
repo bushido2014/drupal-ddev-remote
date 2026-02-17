@@ -5,7 +5,7 @@
  */
 #}
 
-{% extends "themes/custom/dnorthman/templates/layout/page.html.twig" %}
+{{ include('@dnorthman/layout/header.html.twig') }}
 
 {% block content %}
   <div class="error-page error-404">
@@ -16,3 +16,5 @@
     </p>
   </div>
 {% endblock %}
+
+{{ include('@dnorthman/layout/footer.html.twig') }}
